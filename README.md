@@ -1,6 +1,6 @@
 # Cotizador Docs
 
-### Singing In
+### Sing In
 
 -  `Carga el inicio de sesion para ingresar con el usuario registrado previamente` [Singin in with user Faber Grisales.](%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22https%3A%2F%2Flogin.microsoftonline.com%2F1483316d-130f-4b72-a09e-3fb01c930c6d%2Foauth2%2Fv2.0%2Fauthorize%3Fclient_id%3Da2b8102f-0b84-4810-9d46-cae3e2a8f29f%26amp%3Bamp%3Bscope%3Duser.read%2520openid%2520profile%2520offline_access%26amp%3Bamp%3Bredirect_uri%3Dhttps%253A%252F%252Ftransborderuat.eastus.cloudapp.azure.com%252F%26amp%3Bamp%3Bclient-request-id%3D6c3ab0a8-24a7-4c91-9758-b5db21e81212%26amp%3Bamp%3Bresponse_mode%3Dfragment%26amp%3Bamp%3Bresponse_type%3Dcode%26amp%3Bamp%3Bx-client-SKU%3Dmsal.js.browser%26amp%3Bamp%3Bx-client-VER%3D2.38.3%26amp%3Bamp%3Bclient_info%3D1%26amp%3Bamp%3Bcode_challenge%3Dq37GBTsvBNMzWMIBvBncEL-XoElDGj2910adtUSk1kk%26amp%3Bamp%3Bcode_challenge_method%3DS256%26amp%3Bamp%3Bnonce%3D575cd5c1-ea93-4cd0-b297-280ad4fd0ee0%26amp%3Bamp%3Bstate%3DeyJpZCI6ImFhMDYyN2VkLWRhOTAtNGQxZS1hMDVmLWJhZDRlYTFkZTNlYyIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%253D%22%20style%3D%22text%3Bhtml%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22440%22%20y%3D%22210%22%20width%3D%22160%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E)
 -  `API GET CREDENTIAL` [API](https://login.microsoftonline.com/common/GetCredentialType?mkt=es-ES)
@@ -398,4 +398,18 @@ El response es el siguiente:
 }
 ~~~
 
+## Diagrama inicio de sesion:
 
+```mermaid
+graph LR
+A[SING IN] -- Validate Microsoft User --> B[APIS MICROSOFT]
+B --> C[https://transborderuat.eastus.cloudapp.azure.com/config/app.config.json] 
+B --> D[https://login.microsoftonline.com/common/discovery/instance?api-version=1.1&authorization_endpoint=https%3A%2F%2Flogin.microsoftonline.com%2F1483316d-130f-4b72-a09e-3fb01c930c6d%2Foauth2%2Fv2.0%2Fauthorize]
+B --> E[https://login.microsoftonline.com/1483316d-130f-4b72-a09e-3fb01c930c6d/v2.0/.well-known/openid-configuration]
+B --> F[https://login.microsoftonline.com/1483316d-130f-4b72-a09e-3fb01c930c6d/oauth2/v2.0/token]
+B --> G[https://transborderuat.eastus.cloudapp.azure.com/assets/i18n/es.json]
+B --> H[https://graph.microsoft.com/v1.0/me?%24select=id%2CdisplayName%2Cmail%2CmobilePhone%2CuserPrincipalName%2Ccountry%2Ccity%2Cextension_a2b8102f0b8448109d46cae3e2a8f29f_firstLogin%2Cextension_a2b8102f0b8448109d46cae3e2a8f29f_acceptedConditions&%24expand=extensions]
+B --> I[https://login.microsoftonline.com/1483316d-130f-4b72-a09e-3fb01c930c6d/oauth2/v2.0/token]
+B --> J[https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/permiso/byRoles]
+B --> K[`https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/parameter/TIEMPO_MAXIMO_PARA_EXPIRAR_SESION_DEL_USUARIO`]
+```
