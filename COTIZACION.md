@@ -278,3 +278,56 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
         }
     ]
   ~~~
+
+---
+
+### Consultar por Numero Cotizacion
+
+ - `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)`
+
+***Request***:
+
+~~~
+{
+	"numeroCotizacion": "1-050523-000039",
+	"pagina": 1
+}
+~~~
+
+***Response***:
+
+~~~
+[
+	{
+		"idCotizacion": 43,
+		"numeroCotizacion": "1-050523-000039",
+		"nombreEmpresa": "JADASH S A S",
+		"fechaCreacion": "2023-05-05T16:29:00.000+00:00",
+		"estado": "PREP_INST_EMBARQ_ENV",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "HAMBURG",
+		"puertoDestino": "BARRANQUILLA",
+		"incoterm": "EXW",
+		"tipoEmbarque": "FCL",
+		"numeroInstruccionEmbarque": "1 - 152084",
+		"count": 1,
+		"numDocCliente": "900875640",
+		"idCotizacionEnCreacion": null,
+		"origenVersion": null,
+		"origenClonacion": null,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": "DESGLOSADA",
+		"idiomaPdf": "ESPAÑOL",
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "HAMBURG, GERMANY",
+		"ciudadDestino": "BARRANQUILLA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": true,
+		"vencidaInstruccionada": false
+	}
+]
+~~~
