@@ -1,0 +1,280 @@
+# Cotizador Docs
+
+## Cotizaciones
+
+### Consultar cotizaciones
+
+Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes APIS:
+
+ - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/puerto/ (GET)` Lista puertos hasta el id ***1307***
+
+    ***Response***:
+    ~~~
+    [
+        {
+            "id": 302,
+            "nombre": "DURRËS",
+            "pais": {
+                "id": 240,
+                "nombre": "ALBANIA",
+                "codigo": "AL",
+                "requiereCodigoZip": false
+            },
+            "ciudad": {
+                "id": 58841,
+                "nombre": "DURRËS",
+                "pais": {
+                    "id": 240,
+                    "nombre": "ALBANIA",
+                    "codigo": "AL",
+                    "requiereCodigoZip": false
+                },
+                "codigo": "DRZ"
+            }
+        },
+        {
+            "id": 303,
+            "nombre": "ALGER (ALGIERS)",
+            "pais": {
+                "id": 241,
+                "nombre": "ALGERIA",
+                "codigo": "DZ",
+                "requiereCodigoZip": false
+            },
+            "ciudad": {
+                "id": 58874,
+                "nombre": "ALGER (ALGIERS)",
+                "pais": {
+                    "id": 241,
+                    "nombre": "ALGERIA",
+                    "codigo": "DZ",
+                    "requiereCodigoZip": false
+                },
+                "codigo": "ALG"
+            }
+        }
+    ]
+    ~~~
+    - `https://transborderuat.eastus.cloudapp.azure.com/msclientes/api/v1/cliente/apiExterna/1 (GET)` Obtiene un objeto json con datos como se muestran a continuación: 
+  
+    ***Response***:
+
+  ~~~
+  [
+    {
+        "id": null,
+        "idLotus": "84816D82896D8B2605257EE4006DB0E5",
+        "numeroIdentificacion": "",
+        "digitoVerificacion": "",
+        "razonSocial": "",
+        "direccion": "",
+        "telefono": "",
+        "tipoIdentificacion": "NIT",
+        "vinculado": "Si",
+        "tierLotus": "",
+        "tier": null
+    },
+    {
+        "id": null,
+        "idLotus": "26DF25A8401C547F0525842400785193",
+        "numeroIdentificacion": "900743775",
+        "digitoVerificacion": "2",
+        "razonSocial": "\tPUBLILEDS COLOMBIA S.A.S.",
+        "direccion": " TRANSVERSAL 3 B 23 200 TORRE 2\r\nPUERTO COLOMBIA\r\nATLANTICO",
+        "telefono": "3212107906",
+        "tipoIdentificacion": "NIT",
+        "vinculado": "Si",
+        "tierLotus": "3",
+        "tier": null
+    },
+    {
+        "id": null,
+        "idLotus": "180A2C6BFCB5E166052589C2006E1360",
+        "numeroIdentificacion": "901191324",
+        "digitoVerificacion": "8",
+        "razonSocial": "\r\nNEMOOTECH SAS\r\n",
+        "direccion": "Carrera  48 # 10 - 45 Medellin",
+        "telefono": "3244233311 ",
+        "tipoIdentificacion": "NIT",
+        "vinculado": "Si",
+        "tierLotus": "3",
+        "tier": null
+    }
+  ]
+  ~~~
+
+  - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=19 (GET)` 
+  
+  ***Response***:
+
+  ~~~
+    [
+        {
+            "idLista": 19,
+            "identificador": "EN_CREACION",
+            "valor": "En creación",
+            "atributos": null
+        },
+        {
+            "idLista": 19,
+            "identificador": "EN_ESPERA_SPOT",
+            "valor": "En espera spot",
+            "atributos": null
+        },
+        {
+            "idLista": 19,
+            "identificador": "CREADA",
+            "valor": "Creada",
+            "atributos": null
+        },
+        {
+            "idLista": 19,
+            "identificador": "PENDIENTE_ACEPTACION",
+            "valor": "Pendiente de Aceptación",
+            "atributos": null
+        },
+        {
+            "idLista": 19,
+            "identificador": "ACEPTADA",
+            "valor": "Aceptada",
+            "atributos": null
+        },
+        {
+            "idLista": 19,
+            "identificador": "PREP_INST_EMBARQ_ENV",
+            "valor": "Preparación de instrucción de embarque enviada",
+            "atributos": null
+        },
+        {
+            "idLista": 19,
+            "identificador": "VENCIDA",
+            "valor": "Vencida",
+            "atributos": null
+        },
+        {
+            "idLista": 19,
+            "identificador": "ANULADA",
+            "valor": "Anulada",
+            "atributos": null
+        }
+    ]
+  ~~~
+
+  - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=3 (GET)`
+  
+  ***Response***:
+
+  ~~~
+  [
+        {
+            "idLista": 3,
+            "identificador": "EXW",
+            "valor": "Exworks",
+            "atributos": null
+        },
+        {
+            "idLista": 3,
+            "identificador": "FCA",
+            "valor": "Free Carrier",
+            "atributos": null
+        },
+        {
+            "idLista": 3,
+            "identificador": "FAS",
+            "valor": "Free Alongside Ship",
+            "atributos": null
+        },
+        {
+            "idLista": 3,
+            "identificador": "FOB",
+            "valor": "Free On Board",
+            "atributos": null
+        },
+        {
+            "idLista": 3,
+            "identificador": "CFR",
+            "valor": "Cost & Freight",
+            "atributos": null
+        },
+        {
+            "idLista": 3,
+            "identificador": "CIF",
+            "valor": "Cost, Insurance & Freight",
+            "atributos": null
+        },
+        {
+            "idLista": 3,
+            "identificador": "CPT",
+            "valor": "Cost Paid To",
+            "atributos": null
+        },
+        {
+            "idLista": 3,
+            "identificador": "CIP",
+            "valor": "Carrier & Insurance Paid to",
+            "atributos": null
+        },
+        {
+            "idLista": 3,
+            "identificador": "DPU",
+            "valor": "Delivered at Place Unloaded",
+            "atributos": null
+        },
+        {
+            "idLista": 3,
+            "identificador": "DAP",
+            "valor": "Delivered At Place",
+            "atributos": null
+        },
+        {
+            "idLista": 3,
+            "identificador": "DDP",
+            "valor": "Delivered Duty Paid",
+            "atributos": null
+        }
+    ]
+  ~~~
+
+  - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=1 (GET)` 
+
+  ***Response***:
+
+  ~~~
+    [
+        {
+            "idLista": 1,
+            "identificador": "FCL",
+            "valor": "Full Container Load",
+            "atributos": null
+        },
+        {
+            "idLista": 1,
+            "identificador": "LCL",
+            "valor": "Less Container Load",
+            "atributos": null
+        }
+    ]
+  ~~~
+
+  - `https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/grupocomercial/getUsuariosComercialesAsociados/jgrisales@transborderaduat.onmicrosoft.com (GET)`
+  
+  - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=4 (GET)`
+  
+  ***Response***:
+
+  ~~~
+    [
+        {
+            "idLista": 4,
+            "identificador": "COMPRADOR",
+            "valor": "Comprador",
+            "atributos": null
+        },
+        {
+            "idLista": 4,
+            "identificador": "VENDEDOR",
+            "valor": "Vendedor",
+            "atributos": null
+        }
+    ]
+  ~~~
