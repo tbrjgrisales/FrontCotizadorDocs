@@ -55,7 +55,7 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
         }
     ]
     ~~~
-    - `https://transborderuat.eastus.cloudapp.azure.com/msclientes/api/v1/cliente/apiExterna/1 (GET)` Obtiene un objeto json con datos como se muestran a continuación: 
+    - `https://transborderuat.eastus.cloudapp.azure.com/msclientes/api/v1/cliente/apiExterna/1 (GET)` Obtiene un objeto json con datos como se muestran a continuación, el cual trae los clientes: 
   
     ***Response***:
 
@@ -330,4 +330,88 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 		"vencidaInstruccionada": false
 	}
 ]
+~~~
+
+---
+
+### Consultar por Cliente
+
+ - `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST) `
+
+***Request***:
+~~~
+    {
+        "digitoVerificacionCliente": "2",
+        "numeroIdentificacionCliente": "900743775",
+        "pagina": 1,
+        "tipoIdentificacionCliente": "NIT"
+    }
+~~~
+
+***Response***:
+~~~
+    [
+        {
+            "idCotizacion": 44,
+            "numeroCotizacion": "1-050523-000040",
+            "nombreEmpresa": "PARTEQUIPOS S.A.S",
+            "fechaCreacion": "2023-05-05T16:42:00.000+00:00",
+            "estado": "PREP_INST_EMBARQ_ENV",
+            "spotPorConfirmar": "No",
+            "tipoOperacion": null,
+            "puertoOrigen": "HAMBURG",
+            "puertoDestino": "BARRANQUILLA",
+            "incoterm": "FOB",
+            "tipoEmbarque": "LCL",
+            "numeroInstruccionEmbarque": "1 - 152085",
+            "count": 2,
+            "numDocCliente": "830080641",
+            "idCotizacionEnCreacion": null,
+            "origenVersion": null,
+            "origenClonacion": 42,
+            "respuestaProductoEnEsperaSpot": false,
+            "versionada": false,
+            "reporteGastosPorConfirmarVencidos": false,
+            "creadaConEsperaSpot": false,
+            "formaGeneracion": "SEMIDESGLOSADA",
+            "idiomaPdf": "ESPAÑOL",
+            "respuestaProductoSpotPorConfirmar": false,
+            "ciudadOrigen": "HAMBURG, GERMANY",
+            "ciudadDestino": "BARRANQUILLA, COLOMBIA",
+            "perspectiva": "COMPRADOR",
+            "tarifasActualizadas": null,
+            "vencidaInstruccionada": false
+        },
+        {
+            "idCotizacion": 42,
+            "numeroCotizacion": "1-050523-000038",
+            "nombreEmpresa": "PARTEQUIPOS S.A.S",
+            "fechaCreacion": "2023-05-05T16:21:00.000+00:00",
+            "estado": "PREP_INST_EMBARQ_ENV",
+            "spotPorConfirmar": "No",
+            "tipoOperacion": null,
+            "puertoOrigen": "HAMBURG",
+            "puertoDestino": "BARRANQUILLA",
+            "incoterm": "EXW",
+            "tipoEmbarque": "LCL",
+            "numeroInstruccionEmbarque": "1 - 152083",
+            "count": 2,
+            "numDocCliente": "830080641",
+            "idCotizacionEnCreacion": null,
+            "origenVersion": null,
+            "origenClonacion": null,
+            "respuestaProductoEnEsperaSpot": false,
+            "versionada": false,
+            "reporteGastosPorConfirmarVencidos": false,
+            "creadaConEsperaSpot": false,
+            "formaGeneracion": "DESGLOSADA",
+            "idiomaPdf": "ESPAÑOL",
+            "respuestaProductoSpotPorConfirmar": false,
+            "ciudadOrigen": "HAMBURG, GERMANY",
+            "ciudadDestino": "BARRANQUILLA, COLOMBIA",
+            "perspectiva": "COMPRADOR",
+            "tarifasActualizadas": null,
+            "vencidaInstruccionada": false
+        }
+    ]
 ~~~
