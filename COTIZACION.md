@@ -363,6 +363,12 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 ---
 
 # Consultas en el Filtro
+---
+
+```mermaid
+graph LR
+A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion]
+```
 
 ---
 
