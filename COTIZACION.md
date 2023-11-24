@@ -10,7 +10,8 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 <summary><h2>Lista de puertos hasta el id 1307</h2></summary>
 <br>
 
-- `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/puerto (GET)`
+### Metodo GET
+- `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/puerto`
 
 ***Response***:
 ~~~
@@ -62,10 +63,13 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 </details>
 
 <details>
-<sumary> <h2>Se obtiene un objeto json con datos de los clientes </h2></sumary>
+<sumary> <h2>Se obtiene un objeto json con datos de los clientes: </h2></sumary>
 <br>
 
-- `https://transborderuat.eastus.cloudapp.azure.com/msclientes/api/v1/cliente/apiExterna/1 (GET)`  
+### Metodo GET 
+
+- `https://transborderuat.eastus.cloudapp.azure.com/msclientes/api/v1/cliente/apiExterna/{id} `  
+    > ***Note***: El parametro del url es un id (numero).
 
 ***Response***:
 
@@ -114,8 +118,16 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 ~~~
 </details>
 
-  - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=19 (GET)` 
-  
+
+<details>
+<sumary> <h2>Se obtiene un objeto json con datos de los estados</h2></sumary>
+<br>
+
+
+### Metodo GET 
+
+- `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id={id}` 
+  > ***Note***: El parametro del url es un id (numero).
   ***Response***:
 
   ~~~
@@ -170,6 +182,8 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
         }
     ]
   ~~~
+
+</details>
 
   - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=3 (GET)`
   
