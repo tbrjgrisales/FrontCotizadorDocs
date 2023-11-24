@@ -1394,9 +1394,12 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 
 ```mermaid
 graph TD;
-A[Cargar Modulo Consultas] -- Carga de APIS --> B[APIS Cotizacion];
-B -- Carga Puertos --> C[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/puerto/];
-B -- Carga Clientes --> D[https://transborderuat.eastus.cloudapp.azure.com/msclientes/api/v1/cliente/apiExterna/1];
-
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
 ```
 
+---
+
+## Crear Cotizacion
