@@ -1403,6 +1403,19 @@ graph TD;
     A-- Cargar Perspectivas -->H[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=4]
 ```
 
+```
+stateDiagram-v2
+[*] --> Inicio Modulo 
+Inicio Modulo --> APIPuertos
+Inicio Modulo --> APIClientes
+Inicio Modulo --> APIIncoterms
+Inicio Modulo --> APITipoEmbarques
+Inicio Modulo --> APICargarUser
+Inicio Modulo --> APICargarPerspectivas
+Inicio Modulo --> [*]
+```
+
+
 ---
 
 ## Crear Cotizacion
