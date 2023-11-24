@@ -1578,7 +1578,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 ---
 
 <details>
-<summary>Cotizacion en Creación</summary>
+<summary><h2>Cotizacion en Creación</h2></summary>
 <br>
 
 ### Metodo POST
