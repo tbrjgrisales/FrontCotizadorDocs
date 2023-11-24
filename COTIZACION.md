@@ -62,12 +62,8 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 ~~~
 </details>
 
----
-
-# Esto es un texto
-
 <details>
-<sumary><h2>Se obtiene un objeto json con datos de los clientes: </h2></sumary>
+<summary><h2>Lista de puertos hasta el id 1307</h2></summary>
 <br>
 
 ### Metodo GET 
