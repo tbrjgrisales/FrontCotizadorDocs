@@ -4,6 +4,21 @@
 
 ### Consultar cotizaciones
 
+
+```mermaid
+graph LR
+A[Inicio Modulo] -- Cargar APIS --> B[APIS MODULO]
+B -- Cargar Puertos --> C[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/puerto]
+B -- Cargar Clientes --> D[https://transborderuat.eastus.cloudapp.azure.com/msclientes/api/v1/cliente/apiExterna/1]
+B -- Cargar estados --> E[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=19]
+B -- Cargar Incoterms --> F[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=3]
+B -- Cargar Tipos embarques --> G[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=1]
+B -- Consulta Usuario --> H[https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/grupocomercial/getUsuariosComercialesAsociados/jgrisalestransborderaduat.onmicrosoft.com]
+B -- Cargar Perspectivas --> I[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=1]
+```
+
+---
+
 Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes APIS:
 
 <details>
