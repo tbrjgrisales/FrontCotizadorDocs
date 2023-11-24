@@ -65,7 +65,7 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 ---
 
 <details>
-<sumary> <h2>Se obtiene un objeto json con datos de los clientes: </h2></sumary>
+<sumary><h2>Se obtiene un objeto json con datos de los clientes: </h2></sumary>
 <br>
 
 ### Metodo GET 
