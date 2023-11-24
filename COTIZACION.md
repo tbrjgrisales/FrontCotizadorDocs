@@ -19,8 +19,9 @@ B -- Cargar Perspectivas --> I[https://transborderuat.eastus.cloudapp.azure.com/
 
 ---
 
-Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes APIS:
-
+<details>
+<summary>Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes APIS:</summary>
+<br>
 <details>
 <summary><h2>Lista de puertos hasta el id 1307</h2></summary>
 <br>
@@ -358,6 +359,7 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 ]
 ~~~
 
+</details>
 </details>
 
 ---
