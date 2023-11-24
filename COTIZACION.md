@@ -341,8 +341,8 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 ***Request***:
 ~~~
     {
-        "digitoVerificacionCliente": "2",
-        "numeroIdentificacionCliente": "900743775",
+        "digitoVerificacionCliente": "4",
+        "numeroIdentificacionCliente": "830080641",
         "pagina": 1,
         "tipoIdentificacionCliente": "NIT"
     }
@@ -415,3 +415,987 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
         }
     ]
 ~~~
+
+---
+
+### Consultar por Fecha
+
+ - `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)`
+
+***Request***:
+
+~~~
+{
+	"fechaFin": "2023-11-24T05:00:00.000Z",
+	"fechaInicio": "2022-11-24T05:00:00.000Z",
+	"pagina": 1
+}
+~~~
+
+***Response***
+
+~~~
+{
+	"1": {
+		"idCotizacion": 43,
+		"numeroCotizacion": "1-050523-000039",
+		"nombreEmpresa": "JADASH S A S",
+		"fechaCreacion": "2023-05-05T16:29:00.000+00:00",
+		"estado": "PREP_INST_EMBARQ_ENV",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "HAMBURG",
+		"puertoDestino": "BARRANQUILLA",
+		"incoterm": "EXW",
+		"tipoEmbarque": "FCL",
+		"numeroInstruccionEmbarque": "1 - 152084",
+		"count": 4,
+		"numDocCliente": "900875640",
+		"idCotizacionEnCreacion": null,
+		"origenVersion": null,
+		"origenClonacion": null,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": "DESGLOSADA",
+		"idiomaPdf": "ESPAÑOL",
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "HAMBURG, GERMANY",
+		"ciudadDestino": "BARRANQUILLA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": true,
+		"vencidaInstruccionada": false
+	}
+}
+~~~
+
+---
+
+### Consultar por Estado
+
+ - `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)`
+
+***Request***:
+
+~~~
+{
+	"estado": "PREP_INST_EMBARQ_ENV",
+	"pagina": 1
+}
+~~~
+
+***Response***:
+
+~~~
+[
+	{
+		"idCotizacion": 44,
+		"numeroCotizacion": "1-050523-000040",
+		"nombreEmpresa": "PARTEQUIPOS S.A.S",
+		"fechaCreacion": "2023-05-05T16:42:00.000+00:00",
+		"estado": "PREP_INST_EMBARQ_ENV",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "HAMBURG",
+		"puertoDestino": "BARRANQUILLA",
+		"incoterm": "FOB",
+		"tipoEmbarque": "LCL",
+		"numeroInstruccionEmbarque": "1 - 152085",
+		"count": 3,
+		"numDocCliente": "830080641",
+		"idCotizacionEnCreacion": null,
+		"origenVersion": null,
+		"origenClonacion": 42,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": "SEMIDESGLOSADA",
+		"idiomaPdf": "ESPAÑOL",
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "HAMBURG, GERMANY",
+		"ciudadDestino": "BARRANQUILLA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": null,
+		"vencidaInstruccionada": false
+	},
+	{
+		"idCotizacion": 43,
+		"numeroCotizacion": "1-050523-000039",
+		"nombreEmpresa": "JADASH S A S",
+		"fechaCreacion": "2023-05-05T16:29:00.000+00:00",
+		"estado": "PREP_INST_EMBARQ_ENV",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "HAMBURG",
+		"puertoDestino": "BARRANQUILLA",
+		"incoterm": "EXW",
+		"tipoEmbarque": "FCL",
+		"numeroInstruccionEmbarque": "1 - 152084",
+		"count": 3,
+		"numDocCliente": "900875640",
+		"idCotizacionEnCreacion": null,
+		"origenVersion": null,
+		"origenClonacion": null,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": "DESGLOSADA",
+		"idiomaPdf": "ESPAÑOL",
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "HAMBURG, GERMANY",
+		"ciudadDestino": "BARRANQUILLA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": true,
+		"vencidaInstruccionada": false
+	},
+	{
+		"idCotizacion": 42,
+		"numeroCotizacion": "1-050523-000038",
+		"nombreEmpresa": "PARTEQUIPOS S.A.S",
+		"fechaCreacion": "2023-05-05T16:21:00.000+00:00",
+		"estado": "PREP_INST_EMBARQ_ENV",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "HAMBURG",
+		"puertoDestino": "BARRANQUILLA",
+		"incoterm": "EXW",
+		"tipoEmbarque": "LCL",
+		"numeroInstruccionEmbarque": "1 - 152083",
+		"count": 3,
+		"numDocCliente": "830080641",
+		"idCotizacionEnCreacion": null,
+		"origenVersion": null,
+		"origenClonacion": null,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": "DESGLOSADA",
+		"idiomaPdf": "ESPAÑOL",
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "HAMBURG, GERMANY",
+		"ciudadDestino": "BARRANQUILLA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": null,
+		"vencidaInstruccionada": false
+	}
+]
+~~~
+
+---
+
+### Consultar por Ciudad, Pais Origen
+
+ - `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)`
+
+***Response***:
+
+~~~
+[
+	{
+        "idCiudadOrigen": 101946,
+        "pagina": 1
+    }
+]
+~~~
+
+***Response***:
+
+~~~
+    [
+        {
+            "idCotizacion": 44,
+            "numeroCotizacion": "1-050523-000040",
+            "nombreEmpresa": "PARTEQUIPOS S.A.S",
+            "fechaCreacion": "2023-05-05T16:42:00.000+00:00",
+            "estado": "PREP_INST_EMBARQ_ENV",
+            "spotPorConfirmar": "No",
+            "tipoOperacion": null,
+            "puertoOrigen": "HAMBURG",
+            "puertoDestino": "BARRANQUILLA",
+            "incoterm": "FOB",
+            "tipoEmbarque": "LCL",
+            "numeroInstruccionEmbarque": "1 - 152085",
+            "count": 3,
+            "numDocCliente": "830080641",
+            "idCotizacionEnCreacion": null,
+            "origenVersion": null,
+            "origenClonacion": 42,
+            "respuestaProductoEnEsperaSpot": false,
+            "versionada": false,
+            "reporteGastosPorConfirmarVencidos": false,
+            "creadaConEsperaSpot": false,
+            "formaGeneracion": "SEMIDESGLOSADA",
+            "idiomaPdf": "ESPAÑOL",
+            "respuestaProductoSpotPorConfirmar": false,
+            "ciudadOrigen": "HAMBURG, GERMANY",
+            "ciudadDestino": "BARRANQUILLA, COLOMBIA",
+            "perspectiva": "COMPRADOR",
+            "tarifasActualizadas": null,
+            "vencidaInstruccionada": false
+        },
+        {
+            "idCotizacion": 43,
+            "numeroCotizacion": "1-050523-000039",
+            "nombreEmpresa": "JADASH S A S",
+            "fechaCreacion": "2023-05-05T16:29:00.000+00:00",
+            "estado": "PREP_INST_EMBARQ_ENV",
+            "spotPorConfirmar": "No",
+            "tipoOperacion": null,
+            "puertoOrigen": "HAMBURG",
+            "puertoDestino": "BARRANQUILLA",
+            "incoterm": "EXW",
+            "tipoEmbarque": "FCL",
+            "numeroInstruccionEmbarque": "1 - 152084",
+            "count": 3,
+            "numDocCliente": "900875640",
+            "idCotizacionEnCreacion": null,
+            "origenVersion": null,
+            "origenClonacion": null,
+            "respuestaProductoEnEsperaSpot": false,
+            "versionada": false,
+            "reporteGastosPorConfirmarVencidos": false,
+            "creadaConEsperaSpot": false,
+            "formaGeneracion": "DESGLOSADA",
+            "idiomaPdf": "ESPAÑOL",
+            "respuestaProductoSpotPorConfirmar": false,
+            "ciudadOrigen": "HAMBURG, GERMANY",
+            "ciudadDestino": "BARRANQUILLA, COLOMBIA",
+            "perspectiva": "COMPRADOR",
+            "tarifasActualizadas": true,
+            "vencidaInstruccionada": false
+        },
+        {
+            "idCotizacion": 42,
+            "numeroCotizacion": "1-050523-000038",
+            "nombreEmpresa": "PARTEQUIPOS S.A.S",
+            "fechaCreacion": "2023-05-05T16:21:00.000+00:00",
+            "estado": "PREP_INST_EMBARQ_ENV",
+            "spotPorConfirmar": "No",
+            "tipoOperacion": null,
+            "puertoOrigen": "HAMBURG",
+            "puertoDestino": "BARRANQUILLA",
+            "incoterm": "EXW",
+            "tipoEmbarque": "LCL",
+            "numeroInstruccionEmbarque": "1 - 152083",
+            "count": 3,
+            "numDocCliente": "830080641",
+            "idCotizacionEnCreacion": null,
+            "origenVersion": null,
+            "origenClonacion": null,
+            "respuestaProductoEnEsperaSpot": false,
+            "versionada": false,
+            "reporteGastosPorConfirmarVencidos": false,
+            "creadaConEsperaSpot": false,
+            "formaGeneracion": "DESGLOSADA",
+            "idiomaPdf": "ESPAÑOL",
+            "respuestaProductoSpotPorConfirmar": false,
+            "ciudadOrigen": "HAMBURG, GERMANY",
+            "ciudadDestino": "BARRANQUILLA, COLOMBIA",
+            "perspectiva": "COMPRADOR",
+            "tarifasActualizadas": null,
+            "vencidaInstruccionada": false
+        }
+    ]
+~~~
+
+
+---
+
+### Consultar Puertos
+
+ - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/ciudad/findCiudadPaisPorNombre?cadena=+HAMBURG%2C+GERMANY (GET)`
+
+***Response***:
+
+~~~
+[
+	{
+		"id": 101947,
+		"requiereCodigoZip": false,
+		"tienePuerto": false,
+		"nc": "HAMBURG-MITTE",
+		"np": "GERMANY",
+		"cc": "HTJ",
+		"cp": "DE"
+	}
+]
+~~~
+
+---
+
+### Consultar por Puerto
+
+- `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)` 
+
+***Request***:
+
+~~~
+{
+	"idPuertoOrigen": 619,
+	"pagina": 1
+}
+~~~
+
+
+***Response***:
+
+~~~
+[
+	{
+		"idCotizacion": 44,
+		"numeroCotizacion": "1-050523-000040",
+		"nombreEmpresa": "PARTEQUIPOS S.A.S",
+		"fechaCreacion": "2023-05-05T16:42:00.000+00:00",
+		"estado": "PREP_INST_EMBARQ_ENV",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "HAMBURG",
+		"puertoDestino": "BARRANQUILLA",
+		"incoterm": "FOB",
+		"tipoEmbarque": "LCL",
+		"numeroInstruccionEmbarque": "1 - 152085",
+		"count": 3,
+		"numDocCliente": "830080641",
+		"idCotizacionEnCreacion": null,
+		"origenVersion": null,
+		"origenClonacion": 42,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": "SEMIDESGLOSADA",
+		"idiomaPdf": "ESPAÑOL",
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "HAMBURG, GERMANY",
+		"ciudadDestino": "BARRANQUILLA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": null,
+		"vencidaInstruccionada": false
+	},
+	{
+		"idCotizacion": 43,
+		"numeroCotizacion": "1-050523-000039",
+		"nombreEmpresa": "JADASH S A S",
+		"fechaCreacion": "2023-05-05T16:29:00.000+00:00",
+		"estado": "PREP_INST_EMBARQ_ENV",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "HAMBURG",
+		"puertoDestino": "BARRANQUILLA",
+		"incoterm": "EXW",
+		"tipoEmbarque": "FCL",
+		"numeroInstruccionEmbarque": "1 - 152084",
+		"count": 3,
+		"numDocCliente": "900875640",
+		"idCotizacionEnCreacion": null,
+		"origenVersion": null,
+		"origenClonacion": null,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": "DESGLOSADA",
+		"idiomaPdf": "ESPAÑOL",
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "HAMBURG, GERMANY",
+		"ciudadDestino": "BARRANQUILLA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": true,
+		"vencidaInstruccionada": false
+	},
+	{
+		"idCotizacion": 42,
+		"numeroCotizacion": "1-050523-000038",
+		"nombreEmpresa": "PARTEQUIPOS S.A.S",
+		"fechaCreacion": "2023-05-05T16:21:00.000+00:00",
+		"estado": "PREP_INST_EMBARQ_ENV",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "HAMBURG",
+		"puertoDestino": "BARRANQUILLA",
+		"incoterm": "EXW",
+		"tipoEmbarque": "LCL",
+		"numeroInstruccionEmbarque": "1 - 152083",
+		"count": 3,
+		"numDocCliente": "830080641",
+		"idCotizacionEnCreacion": null,
+		"origenVersion": null,
+		"origenClonacion": null,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": "DESGLOSADA",
+		"idiomaPdf": "ESPAÑOL",
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "HAMBURG, GERMANY",
+		"ciudadDestino": "BARRANQUILLA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": null,
+		"vencidaInstruccionada": false
+	}
+]
+~~~
+
+
+---
+
+### Consultar por SPOT
+
+- `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)`
+
+***Rquest***:
+
+~~~
+{
+	"pagina": 1,
+	"spotPorConfirmar": false
+}
+~~~
+
+***Response***:
+
+~~~
+[
+	{
+		"idCotizacion": 44,
+		"numeroCotizacion": "1-050523-000040",
+		"nombreEmpresa": "PARTEQUIPOS S.A.S",
+		"fechaCreacion": "2023-05-05T16:42:00.000+00:00",
+		"estado": "PREP_INST_EMBARQ_ENV",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "HAMBURG",
+		"puertoDestino": "BARRANQUILLA",
+		"incoterm": "FOB",
+		"tipoEmbarque": "LCL",
+		"numeroInstruccionEmbarque": "1 - 152085",
+		"count": 4,
+		"numDocCliente": "830080641",
+		"idCotizacionEnCreacion": null,
+		"origenVersion": null,
+		"origenClonacion": 42,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": "SEMIDESGLOSADA",
+		"idiomaPdf": "ESPAÑOL",
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "HAMBURG, GERMANY",
+		"ciudadDestino": "BARRANQUILLA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": null,
+		"vencidaInstruccionada": false
+	},
+	{
+		"idCotizacion": 43,
+		"numeroCotizacion": "1-050523-000039",
+		"nombreEmpresa": "JADASH S A S",
+		"fechaCreacion": "2023-05-05T16:29:00.000+00:00",
+		"estado": "PREP_INST_EMBARQ_ENV",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "HAMBURG",
+		"puertoDestino": "BARRANQUILLA",
+		"incoterm": "EXW",
+		"tipoEmbarque": "FCL",
+		"numeroInstruccionEmbarque": "1 - 152084",
+		"count": 4,
+		"numDocCliente": "900875640",
+		"idCotizacionEnCreacion": null,
+		"origenVersion": null,
+		"origenClonacion": null,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": "DESGLOSADA",
+		"idiomaPdf": "ESPAÑOL",
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "HAMBURG, GERMANY",
+		"ciudadDestino": "BARRANQUILLA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": true,
+		"vencidaInstruccionada": false
+	},
+	{
+		"idCotizacion": 42,
+		"numeroCotizacion": "1-050523-000038",
+		"nombreEmpresa": "PARTEQUIPOS S.A.S",
+		"fechaCreacion": "2023-05-05T16:21:00.000+00:00",
+		"estado": "PREP_INST_EMBARQ_ENV",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "HAMBURG",
+		"puertoDestino": "BARRANQUILLA",
+		"incoterm": "EXW",
+		"tipoEmbarque": "LCL",
+		"numeroInstruccionEmbarque": "1 - 152083",
+		"count": 4,
+		"numDocCliente": "830080641",
+		"idCotizacionEnCreacion": null,
+		"origenVersion": null,
+		"origenClonacion": null,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": "DESGLOSADA",
+		"idiomaPdf": "ESPAÑOL",
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "HAMBURG, GERMANY",
+		"ciudadDestino": "BARRANQUILLA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": null,
+		"vencidaInstruccionada": false
+	},
+	{
+		"idCotizacion": null,
+		"numeroCotizacion": null,
+		"nombreEmpresa": null,
+		"fechaCreacion": null,
+		"estado": "EN_CREACION",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "GENOVA",
+		"puertoDestino": "CARTAGENA",
+		"incoterm": "EXW",
+		"tipoEmbarque": "FCL",
+		"numeroInstruccionEmbarque": "No aplica",
+		"count": 4,
+		"numDocCliente": "900276962",
+		"idCotizacionEnCreacion": 2,
+		"origenVersion": null,
+		"origenClonacion": null,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": null,
+		"idiomaPdf": null,
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "GENOVA, ITALY",
+		"ciudadDestino": "CARTAGENA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": null,
+		"vencidaInstruccionada": false
+	}
+]
+~~~
+
+---
+
+### Consultar por Perspectiva
+
+- `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)`
+
+***Request***:
+
+~~~
+{
+	"pagina": 1,
+	"perspectiva": "COMPRADOR"
+}
+~~~
+
+***Response***:
+
+~~~
+[
+	{
+		"idCotizacion": 44,
+		"numeroCotizacion": "1-050523-000040",
+		"nombreEmpresa": "PARTEQUIPOS S.A.S",
+		"fechaCreacion": "2023-05-05T16:42:00.000+00:00",
+		"estado": "PREP_INST_EMBARQ_ENV",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "HAMBURG",
+		"puertoDestino": "BARRANQUILLA",
+		"incoterm": "FOB",
+		"tipoEmbarque": "LCL",
+		"numeroInstruccionEmbarque": "1 - 152085",
+		"count": 5,
+		"numDocCliente": "830080641",
+		"idCotizacionEnCreacion": null,
+		"origenVersion": null,
+		"origenClonacion": 42,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": "SEMIDESGLOSADA",
+		"idiomaPdf": "ESPAÑOL",
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "HAMBURG, GERMANY",
+		"ciudadDestino": "BARRANQUILLA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": null,
+		"vencidaInstruccionada": false
+	},
+	{
+		"idCotizacion": 43,
+		"numeroCotizacion": "1-050523-000039",
+		"nombreEmpresa": "JADASH S A S",
+		"fechaCreacion": "2023-05-05T16:29:00.000+00:00",
+		"estado": "PREP_INST_EMBARQ_ENV",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "HAMBURG",
+		"puertoDestino": "BARRANQUILLA",
+		"incoterm": "EXW",
+		"tipoEmbarque": "FCL",
+		"numeroInstruccionEmbarque": "1 - 152084",
+		"count": 5,
+		"numDocCliente": "900875640",
+		"idCotizacionEnCreacion": null,
+		"origenVersion": null,
+		"origenClonacion": null,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": "DESGLOSADA",
+		"idiomaPdf": "ESPAÑOL",
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "HAMBURG, GERMANY",
+		"ciudadDestino": "BARRANQUILLA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": true,
+		"vencidaInstruccionada": false
+	},
+	{
+		"idCotizacion": 42,
+		"numeroCotizacion": "1-050523-000038",
+		"nombreEmpresa": "PARTEQUIPOS S.A.S",
+		"fechaCreacion": "2023-05-05T16:21:00.000+00:00",
+		"estado": "PREP_INST_EMBARQ_ENV",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "HAMBURG",
+		"puertoDestino": "BARRANQUILLA",
+		"incoterm": "EXW",
+		"tipoEmbarque": "LCL",
+		"numeroInstruccionEmbarque": "1 - 152083",
+		"count": 5,
+		"numDocCliente": "830080641",
+		"idCotizacionEnCreacion": null,
+		"origenVersion": null,
+		"origenClonacion": null,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": "DESGLOSADA",
+		"idiomaPdf": "ESPAÑOL",
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "HAMBURG, GERMANY",
+		"ciudadDestino": "BARRANQUILLA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": null,
+		"vencidaInstruccionada": false
+	},
+	{
+		"idCotizacion": 41,
+		"numeroCotizacion": "1-050523-000037",
+		"nombreEmpresa": "TU CASSA SAS",
+		"fechaCreacion": "2023-05-05T16:16:00.000+00:00",
+		"estado": "EN_ESPERA_SPOT",
+		"spotPorConfirmar": "Sí",
+		"tipoOperacion": null,
+		"puertoOrigen": "MUNDRA",
+		"puertoDestino": "BUENAVENTURA",
+		"incoterm": "EXW",
+		"tipoEmbarque": "FCL",
+		"numeroInstruccionEmbarque": null,
+		"count": 5,
+		"numDocCliente": "900428423",
+		"idCotizacionEnCreacion": null,
+		"origenVersion": null,
+		"origenClonacion": null,
+		"respuestaProductoEnEsperaSpot": true,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": true,
+		"formaGeneracion": null,
+		"idiomaPdf": null,
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "MUNDRA, INDIA",
+		"ciudadDestino": "BUENAVENTURA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": null,
+		"vencidaInstruccionada": false
+	},
+	{
+		"idCotizacion": null,
+		"numeroCotizacion": null,
+		"nombreEmpresa": null,
+		"fechaCreacion": null,
+		"estado": "EN_CREACION",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "GENOVA",
+		"puertoDestino": "CARTAGENA",
+		"incoterm": "EXW",
+		"tipoEmbarque": "FCL",
+		"numeroInstruccionEmbarque": "No aplica",
+		"count": 5,
+		"numDocCliente": "900276962",
+		"idCotizacionEnCreacion": 2,
+		"origenVersion": null,
+		"origenClonacion": null,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": null,
+		"idiomaPdf": null,
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "GENOVA, ITALY",
+		"ciudadDestino": "CARTAGENA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": null,
+		"vencidaInstruccionada": false
+	}
+]
+~~~
+
+---
+
+### Consultar por Incoterm 
+
+ - `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)`
+
+***Request***:
+
+~~~
+{
+	"incoterm": "FOB",
+	"pagina": 1
+}
+~~~
+
+***Response***:
+
+~~~
+[
+	{
+		"idCotizacion": 44,
+		"numeroCotizacion": "1-050523-000040",
+		"nombreEmpresa": "PARTEQUIPOS S.A.S",
+		"fechaCreacion": "2023-05-05T16:42:00.000+00:00",
+		"estado": "PREP_INST_EMBARQ_ENV",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "HAMBURG",
+		"puertoDestino": "BARRANQUILLA",
+		"incoterm": "FOB",
+		"tipoEmbarque": "LCL",
+		"numeroInstruccionEmbarque": "1 - 152085",
+		"count": 1,
+		"numDocCliente": "830080641",
+		"idCotizacionEnCreacion": null,
+		"origenVersion": null,
+		"origenClonacion": 42,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": "SEMIDESGLOSADA",
+		"idiomaPdf": "ESPAÑOL",
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "HAMBURG, GERMANY",
+		"ciudadDestino": "BARRANQUILLA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": null,
+		"vencidaInstruccionada": false
+	}
+]
+~~~
+
+
+
+---
+
+### Consultar por Tipo Embarque
+
+ - `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)`
+
+***Request***:
+
+~~~
+{
+	"pagina": 1,
+	"tipoEmbarque": "FCL"
+}
+~~~
+
+***Response***:
+
+~~~
+[
+	{
+		"idCotizacion": 43,
+		"numeroCotizacion": "1-050523-000039",
+		"nombreEmpresa": "JADASH S A S",
+		"fechaCreacion": "2023-05-05T16:29:00.000+00:00",
+		"estado": "PREP_INST_EMBARQ_ENV",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "HAMBURG",
+		"puertoDestino": "BARRANQUILLA",
+		"incoterm": "EXW",
+		"tipoEmbarque": "FCL",
+		"numeroInstruccionEmbarque": "1 - 152084",
+		"count": 3,
+		"numDocCliente": "900875640",
+		"idCotizacionEnCreacion": null,
+		"origenVersion": null,
+		"origenClonacion": null,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": "DESGLOSADA",
+		"idiomaPdf": "ESPAÑOL",
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "HAMBURG, GERMANY",
+		"ciudadDestino": "BARRANQUILLA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": true,
+		"vencidaInstruccionada": false
+	},
+	{
+		"idCotizacion": 41,
+		"numeroCotizacion": "1-050523-000037",
+		"nombreEmpresa": "TU CASSA SAS",
+		"fechaCreacion": "2023-05-05T16:16:00.000+00:00",
+		"estado": "EN_ESPERA_SPOT",
+		"spotPorConfirmar": "Sí",
+		"tipoOperacion": null,
+		"puertoOrigen": "MUNDRA",
+		"puertoDestino": "BUENAVENTURA",
+		"incoterm": "EXW",
+		"tipoEmbarque": "FCL",
+		"numeroInstruccionEmbarque": null,
+		"count": 3,
+		"numDocCliente": "900428423",
+		"idCotizacionEnCreacion": null,
+		"origenVersion": null,
+		"origenClonacion": null,
+		"respuestaProductoEnEsperaSpot": true,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": true,
+		"formaGeneracion": null,
+		"idiomaPdf": null,
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "MUNDRA, INDIA",
+		"ciudadDestino": "BUENAVENTURA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": null,
+		"vencidaInstruccionada": false
+	},
+	{
+		"idCotizacion": null,
+		"numeroCotizacion": null,
+		"nombreEmpresa": null,
+		"fechaCreacion": null,
+		"estado": "EN_CREACION",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "GENOVA",
+		"puertoDestino": "CARTAGENA",
+		"incoterm": "EXW",
+		"tipoEmbarque": "FCL",
+		"numeroInstruccionEmbarque": "No aplica",
+		"count": 3,
+		"numDocCliente": "900276962",
+		"idCotizacionEnCreacion": 2,
+		"origenVersion": null,
+		"origenClonacion": null,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": null,
+		"idiomaPdf": null,
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "GENOVA, ITALY",
+		"ciudadDestino": "CARTAGENA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": null,
+		"vencidaInstruccionada": false
+	}
+]
+~~~
+
+---
+
+### Consultar por No.Instruccion embarque
+
+ - `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)`
+
+***Request***:
+
+~~~
+{
+	"numeroInstruccionEmbarque": "1-152084",
+	"pagina": 1
+}
+~~~
+
+***Response***:
+
+~~~
+[
+	{
+		"idCotizacion": 43,
+		"numeroCotizacion": "1-050523-000039",
+		"nombreEmpresa": "JADASH S A S",
+		"fechaCreacion": "2023-05-05T16:29:00.000+00:00",
+		"estado": "PREP_INST_EMBARQ_ENV",
+		"spotPorConfirmar": "No",
+		"tipoOperacion": null,
+		"puertoOrigen": "HAMBURG",
+		"puertoDestino": "BARRANQUILLA",
+		"incoterm": "EXW",
+		"tipoEmbarque": "FCL",
+		"numeroInstruccionEmbarque": "1 - 152084",
+		"count": 1,
+		"numDocCliente": "900875640",
+		"idCotizacionEnCreacion": null,
+		"origenVersion": null,
+		"origenClonacion": null,
+		"respuestaProductoEnEsperaSpot": false,
+		"versionada": false,
+		"reporteGastosPorConfirmarVencidos": false,
+		"creadaConEsperaSpot": false,
+		"formaGeneracion": "DESGLOSADA",
+		"idiomaPdf": "ESPAÑOL",
+		"respuestaProductoSpotPorConfirmar": false,
+		"ciudadOrigen": "HAMBURG, GERMANY",
+		"ciudadDestino": "BARRANQUILLA, COLOMBIA",
+		"perspectiva": "COMPRADOR",
+		"tarifasActualizadas": true,
+		"vencidaInstruccionada": false
+	}
+]
+~~~
+
+---
+
+## Diagrama Consultar Cotizaciones:
+
+```mermaid
+graph LR
+A[Cargar Modulo Consultas] -- Carga de APIS --> B[APIS Cotizacion]
+B --> C[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/puerto/]
+
+```
+
