@@ -130,6 +130,7 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 
 - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id={id}` 
   > ***Note***: El parametro del url es un id (numero).
+  
   ***Response***:
 
   ~~~
