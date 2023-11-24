@@ -69,7 +69,6 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 <br>
 
 ### Metodo GET 
-
 - `https://transborderuat.eastus.cloudapp.azure.com/msclientes/api/v1/cliente/apiExterna/{id} `  
     > ***Note***: El parametro del url es un id (numero).
 
