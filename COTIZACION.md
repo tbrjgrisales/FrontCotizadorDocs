@@ -7,7 +7,7 @@
 Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes APIS:
 
 <details>
-<summary>Lista puertos hasta el id ***1307***</summary>
+<summary><h4>Lista puertos hasta el id<strong>1307</strong></h4></summary>
 <br>
 
 - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/puerto (GET)`
