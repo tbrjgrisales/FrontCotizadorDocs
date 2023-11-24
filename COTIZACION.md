@@ -347,9 +347,17 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 
 ---
 
-### Consultar por Numero Cotizacion
+# Consultas en el Filtro
 
- - `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)`
+---
+
+## Metodo POST
+
+## Las peticiones que se hacen en los filtros, siempre apuntan a este end point `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion`
+
+<details>
+<summary><h2>Consultar por Numero Cotizacion</h2></summary>
+<br>
 
 ***Request***:
 
@@ -397,96 +405,98 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 	}
 ]
 ~~~
+</details>
 
 ---
 
-### Consultar por Cliente
-
- - `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST) `
+<details>
+<summary><h2>Consultar por Cliente</h2></summary>
+<br>
 
 ***Request***:
 ~~~
-    {
-        "digitoVerificacionCliente": "4",
-        "numeroIdentificacionCliente": "830080641",
-        "pagina": 1,
-        "tipoIdentificacionCliente": "NIT"
-    }
+{
+    "digitoVerificacionCliente": "4",
+    "numeroIdentificacionCliente": "830080641",
+    "pagina": 1,
+    "tipoIdentificacionCliente": "NIT"
+}
 ~~~
 
 ***Response***:
 ~~~
-    [
-        {
-            "idCotizacion": 44,
-            "numeroCotizacion": "1-050523-000040",
-            "nombreEmpresa": "PARTEQUIPOS S.A.S",
-            "fechaCreacion": "2023-05-05T16:42:00.000+00:00",
-            "estado": "PREP_INST_EMBARQ_ENV",
-            "spotPorConfirmar": "No",
-            "tipoOperacion": null,
-            "puertoOrigen": "HAMBURG",
-            "puertoDestino": "BARRANQUILLA",
-            "incoterm": "FOB",
-            "tipoEmbarque": "LCL",
-            "numeroInstruccionEmbarque": "1 - 152085",
-            "count": 2,
-            "numDocCliente": "830080641",
-            "idCotizacionEnCreacion": null,
-            "origenVersion": null,
-            "origenClonacion": 42,
-            "respuestaProductoEnEsperaSpot": false,
-            "versionada": false,
-            "reporteGastosPorConfirmarVencidos": false,
-            "creadaConEsperaSpot": false,
-            "formaGeneracion": "SEMIDESGLOSADA",
-            "idiomaPdf": "ESPAÑOL",
-            "respuestaProductoSpotPorConfirmar": false,
-            "ciudadOrigen": "HAMBURG, GERMANY",
-            "ciudadDestino": "BARRANQUILLA, COLOMBIA",
-            "perspectiva": "COMPRADOR",
-            "tarifasActualizadas": null,
-            "vencidaInstruccionada": false
-        },
-        {
-            "idCotizacion": 42,
-            "numeroCotizacion": "1-050523-000038",
-            "nombreEmpresa": "PARTEQUIPOS S.A.S",
-            "fechaCreacion": "2023-05-05T16:21:00.000+00:00",
-            "estado": "PREP_INST_EMBARQ_ENV",
-            "spotPorConfirmar": "No",
-            "tipoOperacion": null,
-            "puertoOrigen": "HAMBURG",
-            "puertoDestino": "BARRANQUILLA",
-            "incoterm": "EXW",
-            "tipoEmbarque": "LCL",
-            "numeroInstruccionEmbarque": "1 - 152083",
-            "count": 2,
-            "numDocCliente": "830080641",
-            "idCotizacionEnCreacion": null,
-            "origenVersion": null,
-            "origenClonacion": null,
-            "respuestaProductoEnEsperaSpot": false,
-            "versionada": false,
-            "reporteGastosPorConfirmarVencidos": false,
-            "creadaConEsperaSpot": false,
-            "formaGeneracion": "DESGLOSADA",
-            "idiomaPdf": "ESPAÑOL",
-            "respuestaProductoSpotPorConfirmar": false,
-            "ciudadOrigen": "HAMBURG, GERMANY",
-            "ciudadDestino": "BARRANQUILLA, COLOMBIA",
-            "perspectiva": "COMPRADOR",
-            "tarifasActualizadas": null,
-            "vencidaInstruccionada": false
-        }
-    ]
+[
+    {
+        "idCotizacion": 44,
+        "numeroCotizacion": "1-050523-000040",
+        "nombreEmpresa": "PARTEQUIPOS S.A.S",
+        "fechaCreacion": "2023-05-05T16:42:00.000+00:00",
+        "estado": "PREP_INST_EMBARQ_ENV",
+        "spotPorConfirmar": "No",
+        "tipoOperacion": null,
+        "puertoOrigen": "HAMBURG",
+        "puertoDestino": "BARRANQUILLA",
+        "incoterm": "FOB",
+        "tipoEmbarque": "LCL",
+        "numeroInstruccionEmbarque": "1 - 152085",
+        "count": 2,
+        "numDocCliente": "830080641",
+        "idCotizacionEnCreacion": null,
+        "origenVersion": null,
+        "origenClonacion": 42,
+        "respuestaProductoEnEsperaSpot": false,
+        "versionada": false,
+        "reporteGastosPorConfirmarVencidos": false,
+        "creadaConEsperaSpot": false,
+        "formaGeneracion": "SEMIDESGLOSADA",
+        "idiomaPdf": "ESPAÑOL",
+        "respuestaProductoSpotPorConfirmar": false,
+        "ciudadOrigen": "HAMBURG, GERMANY",
+        "ciudadDestino": "BARRANQUILLA, COLOMBIA",
+        "perspectiva": "COMPRADOR",
+        "tarifasActualizadas": null,
+        "vencidaInstruccionada": false
+    },
+    {
+        "idCotizacion": 42,
+        "numeroCotizacion": "1-050523-000038",
+        "nombreEmpresa": "PARTEQUIPOS S.A.S",
+        "fechaCreacion": "2023-05-05T16:21:00.000+00:00",
+        "estado": "PREP_INST_EMBARQ_ENV",
+        "spotPorConfirmar": "No",
+        "tipoOperacion": null,
+        "puertoOrigen": "HAMBURG",
+        "puertoDestino": "BARRANQUILLA",
+        "incoterm": "EXW",
+        "tipoEmbarque": "LCL",
+        "numeroInstruccionEmbarque": "1 - 152083",
+        "count": 2,
+        "numDocCliente": "830080641",
+        "idCotizacionEnCreacion": null,
+        "origenVersion": null,
+        "origenClonacion": null,
+        "respuestaProductoEnEsperaSpot": false,
+        "versionada": false,
+        "reporteGastosPorConfirmarVencidos": false,
+        "creadaConEsperaSpot": false,
+        "formaGeneracion": "DESGLOSADA",
+        "idiomaPdf": "ESPAÑOL",
+        "respuestaProductoSpotPorConfirmar": false,
+        "ciudadOrigen": "HAMBURG, GERMANY",
+        "ciudadDestino": "BARRANQUILLA, COLOMBIA",
+        "perspectiva": "COMPRADOR",
+        "tarifasActualizadas": null,
+        "vencidaInstruccionada": false
+    }
+]
 ~~~
+</details>
 
 ---
 
-### Consultar por Fecha
-
- - `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)`
+<details>
+<summary><h2>Consultar por Fecha</h2></summary>
+<br>
 
 ***Request***:
 
@@ -535,12 +545,13 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 	}
 }
 ~~~
+</details>
 
 ---
 
-### Consultar por Estado
-
- - `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)`
+<details>
+<summary><h2>Consultar por Estado</h2></summary>
+<br>
 
 ***Request***:
 
@@ -650,12 +661,13 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 	}
 ]
 ~~~
+</details>
 
 ---
 
-### Consultar por Ciudad, Pais Origen
-
- - `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)`
+<details>
+<summary><h2>Consultar por Ciudad, Pais Origen</h2></summary>
+<br>
 
 ***Response***:
 
@@ -767,35 +779,13 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
         }
     ]
 ~~~
-
-
----
-
-### Consultar Puertos
-
- - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/ciudad/findCiudadPaisPorNombre?cadena=+HAMBURG%2C+GERMANY (GET)`
-
-***Response***:
-
-~~~
-[
-	{
-		"id": 101947,
-		"requiereCodigoZip": false,
-		"tienePuerto": false,
-		"nc": "HAMBURG-MITTE",
-		"np": "GERMANY",
-		"cc": "HTJ",
-		"cp": "DE"
-	}
-]
-~~~
+</details>
 
 ---
 
-### Consultar por Puerto
-
-- `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)` 
+<details>
+<summary><h2>Consultar por Puerto</h2></summary>
+<br>
 
 ***Request***:
 
@@ -906,13 +896,13 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 	}
 ]
 ~~~
-
+</details>
 
 ---
 
-### Consultar por SPOT
-
-- `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)`
+<details>
+<summary><h2>Consultar por SPOT</h2></summary>
+<br>
 
 ***Rquest***:
 
@@ -1053,12 +1043,13 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 	}
 ]
 ~~~
+</details>
 
 ---
 
-### Consultar por Perspectiva
-
-- `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)`
+<details>
+<summary><h2>Consultar por Perspectiva</h2></summary>
+<br>
 
 ***Request***:
 
@@ -1230,12 +1221,13 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 	}
 ]
 ~~~
+</details>
 
 ---
 
-### Consultar por Incoterm 
-
- - `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)`
+<details>
+<summary><h2>Consultar por Incoterm</h2></summary>
+<br> 
 
 ***Request***:
 
@@ -1284,13 +1276,13 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 ]
 ~~~
 
-
+</details>
 
 ---
 
-### Consultar por Tipo Embarque
-
- - `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)`
+<details>
+<summary><h2>Consultar por Tipo Embarque</h2></summary>
+<br>
 
 ***Request***:
 
@@ -1400,12 +1392,13 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 	}
 ]
 ~~~
+</details>
 
 ---
 
-### Consultar por No.Instruccion embarque
-
- - `https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/findCotizacion/ (POST)`
+<details>
+<summary><h2>Consultar por No.Instruccion embarque</h2></summary>
+<br>
 
 ***Request***:
 
@@ -1453,11 +1446,28 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 	}
 ]
 ~~~
+</details>
 
 ---
 
-## Diagrama Consultar Cotizaciones:
+### Consultar Puertos
 
+ - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/ciudad/findCiudadPaisPorNombre?cadena=+HAMBURG%2C+GERMANY (GET)`
 
+***Response***:
 
-## Crear Cotizacion
+~~~
+[
+	{
+		"id": 101947,
+		"requiereCodigoZip": false,
+		"tienePuerto": false,
+		"nc": "HAMBURG-MITTE",
+		"np": "GERMANY",
+		"cc": "HTJ",
+		"cp": "DE"
+	}
+]
+~~~
+
+---
