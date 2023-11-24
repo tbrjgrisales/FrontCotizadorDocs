@@ -7,7 +7,7 @@
 Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes APIS:
 
 <details>
-<summary><h4>Lista puertos hasta el id<strong>1307</strong></h4></summary>
+<summary><h2>Lista de puertos hasta el id 1307</h2></summary>
 <br>
 
 - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/puerto (GET)`
@@ -61,12 +61,16 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 ~~~
 </details>
 
-- `https://transborderuat.eastus.cloudapp.azure.com/msclientes/api/v1/cliente/apiExterna/1 (GET)` Obtiene un objeto json con datos como se muestran a continuación, el cual trae los clientes: 
+<details>
+<sumary> <h2>Se obtiene un objeto json con datos de los clientes </h2></sumary>
+<br>
+
+- `https://transborderuat.eastus.cloudapp.azure.com/msclientes/api/v1/cliente/apiExterna/1 (GET)`  
 
 ***Response***:
 
-  ~~~
-  [
+~~~
+[
     {
         "id": null,
         "idLotus": "84816D82896D8B2605257EE4006DB0E5",
@@ -106,8 +110,9 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
         "tierLotus": "3",
         "tier": null
     }
-  ]
-  ~~~
+]
+~~~
+</details>
 
   - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=19 (GET)` 
   
