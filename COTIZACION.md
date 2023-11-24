@@ -119,6 +119,7 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 ~~~
 </details>
 
+---
 
 <details>
 <summary> <h2>Se obtiene un objeto json con datos de los estados</h2></summary>
@@ -185,6 +186,8 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
   ~~~
 
 </details>
+
+---
 
   - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=3 (GET)`
   
