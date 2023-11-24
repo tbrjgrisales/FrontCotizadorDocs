@@ -6,13 +6,26 @@
 
 Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes APIS:
 
- - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/puerto/ (GET)` Lista puertos hasta el id ***1307***
+<details>
+<summary>Lista puertos hasta el id ***1307***</summary>
+<br>
 
-    ***Response***:
-    ~~~
-    [
-        {
-            "id": 302,
+- `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/puerto (GET)`
+
+***Response***:
+~~~
+[
+    {
+        "id": 302,
+        "nombre": "DURRËS",
+        "pais": {
+            "id": 240,
+            "nombre": "ALBANIA",
+            "codigo": "AL",
+            "requiereCodigoZip": false
+        },
+        "ciudad": {
+            "id": 58841,
             "nombre": "DURRËS",
             "pais": {
                 "id": 240,
@@ -20,20 +33,20 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
                 "codigo": "AL",
                 "requiereCodigoZip": false
             },
-            "ciudad": {
-                "id": 58841,
-                "nombre": "DURRËS",
-                "pais": {
-                    "id": 240,
-                    "nombre": "ALBANIA",
-                    "codigo": "AL",
-                    "requiereCodigoZip": false
-                },
-                "codigo": "DRZ"
-            }
+            "codigo": "DRZ"
+        }
+    },
+    {
+        "id": 303,
+        "nombre": "ALGER (ALGIERS)",
+        "pais": {
+            "id": 241,
+            "nombre": "ALGERIA",
+            "codigo": "DZ",
+            "requiereCodigoZip": false
         },
-        {
-            "id": 303,
+        "ciudad": {
+            "id": 58874,
             "nombre": "ALGER (ALGIERS)",
             "pais": {
                 "id": 241,
@@ -41,23 +54,16 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
                 "codigo": "DZ",
                 "requiereCodigoZip": false
             },
-            "ciudad": {
-                "id": 58874,
-                "nombre": "ALGER (ALGIERS)",
-                "pais": {
-                    "id": 241,
-                    "nombre": "ALGERIA",
-                    "codigo": "DZ",
-                    "requiereCodigoZip": false
-                },
-                "codigo": "ALG"
-            }
+            "codigo": "ALG"
         }
-    ]
-    ~~~
-    - `https://transborderuat.eastus.cloudapp.azure.com/msclientes/api/v1/cliente/apiExterna/1 (GET)` Obtiene un objeto json con datos como se muestran a continuación, el cual trae los clientes: 
-  
-    ***Response***:
+    }
+]
+~~~
+</details>
+
+- `https://transborderuat.eastus.cloudapp.azure.com/msclientes/api/v1/cliente/apiExterna/1 (GET)` Obtiene un objeto json con datos como se muestran a continuación, el cual trae los clientes: 
+
+***Response***:
 
   ~~~
   [
@@ -1392,41 +1398,6 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 
 ## Diagrama Consultar Cotizaciones:
 
-```mermaid
-graph LR
-A[Inicio Modulo] -- Cargar puertos --> B[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/puerto/]
-A --> C[https://transborderuat.eastus.cloudapp.azure.com/msclientes/api/v1/cliente/apiExterna/1]
-A --> D[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=19]
-A --> E[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=3]
-A -->F[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=1]
-A --> G[https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/grupocomercial/getUsuariosComercialesAsociados/jgrisales@transborderaduat.2onmicrosoft.com];
-A --> H[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=4]
-```
-```mermaid
-graph LR
-A[SING IN] -- Validate Microsoft User --> B[APIS MICROSOFT]
-B --> C[https://transborderuat.eastus.cloudapp.azure.com/config/app.config.json] 
-B --> D[https://login.microsoftonline.com/common/discovery/instance?api-version=1.1&authorization_endpoint=https%3A%2F%2Flogin.microsoftonline.com%2F1483316d-130f-4b72-a09e-3fb01c930c6d%2Foauth2%2Fv2.0%2Fauthorize]
-B --> E[https://login.microsoftonline.com/1483316d-130f-4b72-a09e-3fb01c930c6d/v2.0/.well-known/openid-configuration]
-B --> F[https://login.microsoftonline.com/1483316d-130f-4b72-a09e-3fb01c930c6d/oauth2/v2.0/token]
-B --> G[https://transborderuat.eastus.cloudapp.azure.com/assets/i18n/es.json]
-B --> H[https://graph.microsoft.com/v1.0/me?%24select=id%2CdisplayName%2Cmail%2CmobilePhone%2CuserPrincipalName%2Ccountry%2Ccity%2Cextension_a2b8102f0b8448109d46cae3e2a8f29f_firstLogin%2Cextension_a2b8102f0b8448109d46cae3e2a8f29f_acceptedConditions&%24expand=extensions]
-B --> I[https://login.microsoftonline.com/1483316d-130f-4b72-a09e-3fb01c930c6d/oauth2/v2.0/token]
-B --> J[https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/permiso/byRoles]
-B --> K[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/parameter/TIEMPO_MAXIMO_PARA_EXPIRAR_SESION_DEL_USUARIO]
-```
-```
-stateDiagram-v2
-[*] --> Inicio Modulo 
-Inicio Modulo --> APIPuertos
-Inicio Modulo --> APIClientes
-Inicio Modulo --> APIIncoterms
-Inicio Modulo --> APITipoEmbarques
-Inicio Modulo --> APICargarUser
-Inicio Modulo --> APICargarPerspectivas
-Inicio Modulo --> [*]
-```
 
----
 
 ## Crear Cotizacion
