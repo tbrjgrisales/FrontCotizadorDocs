@@ -1395,12 +1395,12 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 ```mermaid
 graph LR
 A[Inicio Modulo] -- Cargar puertos --> B[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/puerto/]
-A -- Cargar Clientes --> C[https://transborderuat.eastus.cloudapp.azure.com/msclientes/api/v1/cliente/apiExterna/1]
-A -- Cargar Estados --> D[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=19]
-A -- Cargar Incoterms --> E[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=3]
-A -- Cargar tipo de embarques -->F[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=1]
+A --> C[https://transborderuat.eastus.cloudapp.azure.com/msclientes/api/v1/cliente/apiExterna/1]
+A --> D[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=19]
+A --> E[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=3]
+A -->F[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=1]
 A --> G[https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/grupocomercial/getUsuariosComercialesAsociados/jgrisales@transborderaduat.2onmicrosoft.com];
-A -- Cargar Perspectivas --> H[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=4]
+A --> H[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=4]
 ```
 ```mermaid
 graph LR
