@@ -88,7 +88,7 @@ El response es el siguiente:
 
 `https://transborderuat.eastus.cloudapp.azure.com/config/app.config.json (GET) `
 
-***Response***:
+**Response**:
 
 ~~~
 {
@@ -115,7 +115,7 @@ El response es el siguiente:
 
 `https://login.microsoftonline.com/common/discovery/instance?api-version=1.1&authorization_endpoint=https%3A%2F%2Flogin.microsoftonline.com%2F1483316d-130f-4b72-a09e-3fb01c930c6d%2Foauth2%2Fv2.0%2Fauthorize (GET)`
 
-***Response***:
+**Response**:
 
 ~~~
 {
@@ -168,7 +168,7 @@ El response es el siguiente:
 
 `https://login.microsoftonline.com/1483316d-130f-4b72-a09e-3fb01c930c6d/v2.0/.well-known/openid-configuration (GET) `
 
-***Response***:
+**Response**:
 
 ~~~
 {
@@ -243,7 +243,7 @@ El response es el siguiente:
 
 `https://login.microsoftonline.com/1483316d-130f-4b72-a09e-3fb01c930c6d/oauth2/v2.0/token (POST)`
 
-***Request***:
+**Request**:
 
 ~~~
 {
@@ -264,7 +264,7 @@ El response es el siguiente:
 }
 ~~~
 
-***Response***:
+**Response**:
 
 ~~~
 {
@@ -283,7 +283,7 @@ El response es el siguiente:
 
 `https://graph.microsoft.com/v1.0/me?%24select=id%2CdisplayName%2Cmail%2CmobilePhone%2CuserPrincipalName%2Ccountry%2Ccity%2Cextension_a2b8102f0b8448109d46cae3e2a8f29f_firstLogin%2Cextension_a2b8102f0b8448109d46cae3e2a8f29f_acceptedConditions&%24expand=extensions (GET) `
 
-***Response***:
+**Response**:
 
 ~~~
 {
@@ -320,7 +320,7 @@ El response es el siguiente:
 
 `https://login.microsoftonline.com/1483316d-130f-4b72-a09e-3fb01c930c6d/oauth2/v2.0/token (POST)`
 
-***Request***:
+**Request**:
 
 ~~~
 {
@@ -339,7 +339,7 @@ El response es el siguiente:
 }
 ~~~
 
-***Response***:
+**Response**:
 
 ~~~
 {
@@ -356,7 +356,7 @@ El response es el siguiente:
 
 `https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/permiso/byRoles (POST)`
 
-***Request***:
+**Request**:
 
 ~~~
 [
@@ -370,7 +370,7 @@ El response es el siguiente:
 ]
 ~~~
 
-***Response***:
+**Response**:
 
 ~~~
 [
@@ -402,7 +402,7 @@ El response es el siguiente:
 
 `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/parameter/TIEMPO_MAXIMO_PARA_EXPIRAR_SESION_DEL_USUARIO (GET)`
 
-***Response***:
+**Response**:
 
 ~~~
 {

@@ -20,7 +20,7 @@ B -- Cargar Perspectivas --> I[https://transborderuat.eastus.cloudapp.azure.com/
 ---
 
 <details>
-<summary>Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes APIS:</summary>
+<summary><h2>Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes APIS:</h2></summary>
 <br>
 <details>
 <summary><h2>Lista de puertos hasta el id 1307</h2></summary>
@@ -29,7 +29,7 @@ B -- Cargar Perspectivas --> I[https://transborderuat.eastus.cloudapp.azure.com/
 ### Metodo GET
 - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/puerto`
 
-***Response***:
+**Response**:
 ~~~
 [
     {
@@ -88,7 +88,7 @@ B -- Cargar Perspectivas --> I[https://transborderuat.eastus.cloudapp.azure.com/
 - `https://transborderuat.eastus.cloudapp.azure.com/msclientes/api/v1/cliente/apiExterna/{id} `  
     > ***Note***: El parametro del url es un id (numero).
 
-***Response***:
+**Response**:
 
 ~~~
 [
@@ -147,7 +147,7 @@ B -- Cargar Perspectivas --> I[https://transborderuat.eastus.cloudapp.azure.com/
 - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id={id}` 
   > ***Note***: El parametro del url es un id (numero).
   
-  ***Response***:
+  **Response**:
 
   ~~~
     [
@@ -216,7 +216,7 @@ B -- Cargar Perspectivas --> I[https://transborderuat.eastus.cloudapp.azure.com/
 - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id={id}`
   > ***Note***: El parametro del url es un id (numero).
 
-***Response***:
+**Response**:
 
 ~~~
 [
@@ -302,7 +302,7 @@ B -- Cargar Perspectivas --> I[https://transborderuat.eastus.cloudapp.azure.com/
   > ***Note***: El parametro del url es un id (numero).
 
 
-***Response***:
+**Response**:
 
 ~~~
   [
@@ -340,7 +340,7 @@ B -- Cargar Perspectivas --> I[https://transborderuat.eastus.cloudapp.azure.com/
 - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id={id}`
     > ***Note***: El parametro del url es un id (numero).
   
-***Response***:
+**Response**:
 
 ~~~
 [
@@ -382,7 +382,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 <summary><h2>Consultar por Numero Cotizacion</h2></summary>
 <br>
 
-***Request***:
+**Request**:
 
 ~~~
 {
@@ -391,7 +391,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 }
 ~~~
 
-***Response***:
+**Response**:
 
 ~~~
 [
@@ -436,7 +436,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 <summary><h2>Consultar por Cliente</h2></summary>
 <br>
 
-***Request***:
+**Request**:
 ~~~
 {
     "digitoVerificacionCliente": "4",
@@ -446,7 +446,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 }
 ~~~
 
-***Response***:
+**Response**:
 ~~~
 [
     {
@@ -521,7 +521,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 <summary><h2>Consultar por Fecha</h2></summary>
 <br>
 
-***Request***:
+**Request**:
 
 ~~~
 {
@@ -531,7 +531,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 }
 ~~~
 
-***Response***
+**Response**
 
 ~~~
 {
@@ -576,7 +576,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 <summary><h2>Consultar por Estado</h2></summary>
 <br>
 
-***Request***:
+**Request**:
 
 ~~~
 {
@@ -585,7 +585,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 }
 ~~~
 
-***Response***:
+**Response**:
 
 ~~~
 [
@@ -692,7 +692,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 <summary><h2>Consultar por Ciudad, Pais Origen</h2></summary>
 <br>
 
-***Response***:
+**Response**:
 
 ~~~
 [
@@ -703,7 +703,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 ]
 ~~~
 
-***Response***:
+**Response**:
 
 ~~~
     [
@@ -810,7 +810,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 <summary><h2>Consultar por Puerto</h2></summary>
 <br>
 
-***Request***:
+**Request**:
 
 ~~~
 {
@@ -820,7 +820,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 ~~~
 
 
-***Response***:
+**Response**:
 
 ~~~
 [
@@ -936,7 +936,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 }
 ~~~
 
-***Response***:
+**Response**:
 
 ~~~
 [
@@ -1074,7 +1074,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 <summary><h2>Consultar por Perspectiva</h2></summary>
 <br>
 
-***Request***:
+**Request**:
 
 ~~~
 {
@@ -1083,7 +1083,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 }
 ~~~
 
-***Response***:
+**Response**:
 
 ~~~
 [
@@ -1252,7 +1252,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 <summary><h2>Consultar por Incoterm</h2></summary>
 <br> 
 
-***Request***:
+**Request**:
 
 ~~~
 {
@@ -1261,7 +1261,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 }
 ~~~
 
-***Response***:
+**Response**:
 
 ~~~
 [
@@ -1307,7 +1307,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 <summary><h2>Consultar por Tipo Embarque</h2></summary>
 <br>
 
-***Request***:
+**Request**:
 
 ~~~
 {
@@ -1316,7 +1316,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 }
 ~~~
 
-***Response***:
+**Response**:
 
 ~~~
 [
@@ -1423,7 +1423,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 <summary><h2>Consultar por No.Instruccion embarque</h2></summary>
 <br>
 
-***Request***:
+**Request**:
 
 ~~~
 {
@@ -1432,7 +1432,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 }
 ~~~
 
-***Response***:
+**Response**:
 
 ~~~
 [
@@ -1477,7 +1477,7 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 
  - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/ciudad/findCiudadPaisPorNombre?cadena=+HAMBURG%2C+GERMANY (GET)`
 
-***Response***:
+**Response**:
 
 ~~~
 [
@@ -1494,3 +1494,215 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 ~~~
 
 ---
+
+# Crear Cotizacion
+<details>
+<summary><h2>Crear cotización</h2></summary>
+<br>
+<details>
+<summary><h2>Ciudad Origen</h2></summary>
+<br>
+
+### Metodo GET
+
+- `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/puerto/byIdCiudad?idCiudad={idCiudad}}`
+  > ***Note***: parametro idCiudad origen (numero)
+
+**Response**
+
+~~~
+[
+	{
+		"id": 619,
+		"nombre": "HAMBURG",
+		"ciudad": {
+			"id": 101946,
+			"nombre": "HAMBURG",
+			"pais": {
+				"id": 320,
+				"nombre": "GERMANY",
+				"codigo": "DE",
+				"requiereCodigoZip": false,
+				"montoMaximoMercanciaGeneral": null,
+				"montoMaximoMercanciaVulnerable": null,
+				"aplicaProtocolo": false,
+				"mercanciasVulnerables": "{\"nombre\":\"Mercancías vulnerables\",\r\n\t\"productos\":[{\r\n\t\t\"nombre\":\"Aceros\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Zinc\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Cobre en laminas o rollos de alambre\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Alimentos enlatados\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Leche en polvo\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Arroz\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Azúcar de cualquier tipo excluida el azúcar crudo\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Calzado\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Cueros\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos de cuero terminados\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Café de exportación\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Café pergamino\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Cigarrillos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Tabaco\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Harina de pescado\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Juegos de video\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Software de videos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Juguetes para niños(as)\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Perfumes\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Colonias y productos similares (incluyendo productos de aseo personal)\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Licores\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Cervezas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Vinos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Libros e impresos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Textos escolares\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Revistas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Llantas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Rines\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Neumáticos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Máquinas para casinos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Juegos de azar\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Teléfonos celulares o equivalentes\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Papel y/o productos elaborados con pulpa de papel:\",\r\n\t\t\"productos\":[{\r\n\t\t\t\t\"nombre\":\"Papel higiénico\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Servilletas\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Toallas para cocina\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Toallas sanitarias\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Pañales desechables\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t}]\r\n\t},{\r\n\t\t\"nombre\":\"Pinturas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Materias primas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Disolventes\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Polipropileno\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Polietileno\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Látex en bruto o a granel\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos biomédicos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos farmacéuticos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos veterinarios diferentes a la comida para animales\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos químicos:\",\r\n\t\t\"productos\":[{\r\n\t\t\t\t\"nombre\":\"Agroquímicos\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Fungicidas \",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Insecticidas\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Abonos\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Fertilizantes\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t}]\r\n\t},{\r\n\t\t\"nombre\":\"Repuestos automotores\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Material CKD, cuando vienen armados (no incluye partes para repuestos desarmados)\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Textiles\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Telas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Confecciones\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Accesorios\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Vehículos automotores transportados en camiones especiales o niñeras\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Vehículos automotores movilizados por sus propios medios:\",\r\n\t\t\"productos\":[{\r\n\t\t\t\t\"nombre\":\"Aviones y/o helicópteros completos o en partes\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Los vehículos en camiones especiales y/o niñeras serán considerados RIESGO MEDIANO hasta USD 250.000 por vehículo\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Valores asegurados mayores serán considerados ALTO RIESGO\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Abonos\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Fertilizantes\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t}]\r\n\t}\r\n\r\n\t]\r\n}"
+			},
+			"codigo": "HAM"
+		},
+		"codigo": "HAM"
+	}
+]
+~~~
+</details>
+
+---
+
+<details>
+<summary><h2>Ciudad Destino</h2></summary>
+<br>
+
+### Metodo GET
+
+- `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/puerto/byIdCiudad?idCiudad={idCiudad}`
+  > ***Note***: parametro idCiudad destino (numero)
+
+**Response**:
+
+~~~
+[
+	{
+		"id": 535,
+		"nombre": "CARTAGENA",
+		"ciudad": {
+			"id": 77852,
+			"nombre": "CARTAGENA",
+			"pais": {
+				"id": 285,
+				"nombre": "COLOMBIA",
+				"codigo": "CO",
+				"requiereCodigoZip": false,
+				"montoMaximoMercanciaGeneral": null,
+				"montoMaximoMercanciaVulnerable": null,
+				"aplicaProtocolo": false,
+				"mercanciasVulnerables": "{\"nombre\":\"Mercancías vulnerables\",\r\n\t\"productos\":[{\r\n\t\t\"nombre\":\"Aceros\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Zinc\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Cobre en laminas o rollos de alambre\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Alimentos enlatados\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Leche en polvo\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Arroz\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Azúcar de cualquier tipo excluida el azúcar crudo\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Calzado\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Cueros\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos de cuero terminados\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Café de exportación\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Café pergamino\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Cigarrillos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Tabaco\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Harina de pescado\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Juegos de video\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Software de videos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Juguetes para niños(as)\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Perfumes\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Colonias y productos similares (incluyendo productos de aseo personal)\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Licores\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Cervezas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Vinos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Libros e impresos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Textos escolares\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Revistas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Llantas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Rines\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Neumáticos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Máquinas para casinos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Juegos de azar\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Teléfonos celulares o equivalentes\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Papel y/o productos elaborados con pulpa de papel:\",\r\n\t\t\"productos\":[{\r\n\t\t\t\t\"nombre\":\"Papel higiénico\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Servilletas\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Toallas para cocina\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Toallas sanitarias\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Pañales desechables\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t}]\r\n\t},{\r\n\t\t\"nombre\":\"Pinturas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Materias primas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Disolventes\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Polipropileno\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Polietileno\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Látex en bruto o a granel\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos biomédicos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos farmacéuticos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos veterinarios diferentes a la comida para animales\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos químicos:\",\r\n\t\t\"productos\":[{\r\n\t\t\t\t\"nombre\":\"Agroquímicos\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Fungicidas \",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Insecticidas\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Abonos\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Fertilizantes\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t}]\r\n\t},{\r\n\t\t\"nombre\":\"Repuestos automotores\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Material CKD, cuando vienen armados (no incluye partes para repuestos desarmados)\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Textiles\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Telas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Confecciones\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Accesorios\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Vehículos automotores transportados en camiones especiales o niñeras\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Vehículos automotores movilizados por sus propios medios:\",\r\n\t\t\"productos\":[{\r\n\t\t\t\t\"nombre\":\"Aviones y/o helicópteros completos o en partes\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Los vehículos en camiones especiales y/o niñeras serán considerados RIESGO MEDIANO hasta USD 250.000 por vehículo\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Valores asegurados mayores serán considerados ALTO RIESGO\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Abonos\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Fertilizantes\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t}]\r\n\t}\r\n\r\n\t]\r\n}"
+			},
+			"codigo": "CTG"
+		},
+		"codigo": "CTG"
+	}
+]
+~~~
+</details>
+
+---
+
+<details>
+<summary>Cotizacion en Creación</summary>
+<br>
+
+### Metodo POST
+- `https://transborderuat.eastus.cloudapp.azure.com/mscotizaciones/api/v1/CotizacionEnCreacion/save`
+
+**Response**:
+
+~~~
+{
+	"adicionalOtrosDest": [],
+	"adicionalOtrosOri": [],
+	"ciudad": "",
+	"contactos": [],
+	"cotizacion": {
+		"ciudadDestino": {
+			"aplicaDevolucion": false,
+			"codigo": "",
+			"dropOff": false,
+			"id": 77852,
+			"nombre": "",
+			"pais": {}
+		},
+		"ciudadOrigen": {
+			"aplicaDevolucion": false,
+			"codigo": "",
+			"dropOff": false,
+			"id": 101946,
+			"nombre": "",
+			"pais": {}
+		},
+		"fechaEstimadaEmbarque": "2023-12-22T05:00:00.000Z",
+		"idsPuertosDestino": [
+			535
+		],
+		"idsPuertosOrigen": [
+			619
+		],
+		"perspectiva": "COMPRADOR"
+	},
+	"cotizacionFcl": {},
+	"cotizacionLcl": {},
+	"dimensionesPiezaLCL": [],
+	"pais": "",
+	"spotNavieraGastos": false,
+	"sucursal": {},
+	"urlPantalla": "seleccionPuerto"
+}
+~~~
+</details>
+
+---
+
+<details>
+<summary><h2>Puerto Origen</h2></summary>
+<br>
+
+### Metodo GET
+
+- `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/puerto/{idPuerto}`
+  > ***Note***: parametro idPuerto Origen (numero)
+
+**Response**:
+
+~~~
+{
+	"id": 619,
+	"nombre": "HAMBURG",
+	"ciudad": {
+		"id": 101946,
+		"nombre": "HAMBURG",
+		"pais": {
+			"id": 320,
+			"nombre": "GERMANY",
+			"codigo": "DE",
+			"requiereCodigoZip": false,
+			"montoMaximoMercanciaGeneral": null,
+			"montoMaximoMercanciaVulnerable": null,
+			"aplicaProtocolo": false,
+			"mercanciasVulnerables": "{\"nombre\":\"Mercancías vulnerables\",\r\n\t\"productos\":[{\r\n\t\t\"nombre\":\"Aceros\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Zinc\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Cobre en laminas o rollos de alambre\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Alimentos enlatados\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Leche en polvo\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Arroz\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Azúcar de cualquier tipo excluida el azúcar crudo\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Calzado\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Cueros\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos de cuero terminados\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Café de exportación\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Café pergamino\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Cigarrillos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Tabaco\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Harina de pescado\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Juegos de video\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Software de videos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Juguetes para niños(as)\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Perfumes\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Colonias y productos similares (incluyendo productos de aseo personal)\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Licores\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Cervezas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Vinos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Libros e impresos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Textos escolares\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Revistas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Llantas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Rines\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Neumáticos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Máquinas para casinos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Juegos de azar\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Teléfonos celulares o equivalentes\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Papel y/o productos elaborados con pulpa de papel:\",\r\n\t\t\"productos\":[{\r\n\t\t\t\t\"nombre\":\"Papel higiénico\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Servilletas\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Toallas para cocina\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Toallas sanitarias\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Pañales desechables\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t}]\r\n\t},{\r\n\t\t\"nombre\":\"Pinturas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Materias primas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Disolventes\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Polipropileno\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Polietileno\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Látex en bruto o a granel\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos biomédicos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos farmacéuticos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos veterinarios diferentes a la comida para animales\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos químicos:\",\r\n\t\t\"productos\":[{\r\n\t\t\t\t\"nombre\":\"Agroquímicos\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Fungicidas \",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Insecticidas\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Abonos\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Fertilizantes\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t}]\r\n\t},{\r\n\t\t\"nombre\":\"Repuestos automotores\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Material CKD, cuando vienen armados (no incluye partes para repuestos desarmados)\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Textiles\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Telas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Confecciones\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Accesorios\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Vehículos automotores transportados en camiones especiales o niñeras\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Vehículos automotores movilizados por sus propios medios:\",\r\n\t\t\"productos\":[{\r\n\t\t\t\t\"nombre\":\"Aviones y/o helicópteros completos o en partes\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Los vehículos en camiones especiales y/o niñeras serán considerados RIESGO MEDIANO hasta USD 250.000 por vehículo\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Valores asegurados mayores serán considerados ALTO RIESGO\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Abonos\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Fertilizantes\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t}]\r\n\t}\r\n\r\n\t]\r\n}"
+		},
+		"codigo": "HAM"
+	},
+	"codigo": "HAM"
+}
+~~~
+
+</details>
+
+---
+
+<details>
+<summary><h2>Puerto Destino</h2></summary>
+<br>
+
+### Metodo GET
+
+- `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/puerto/{idPuerto}`
+  > ***Note***: parametro idPuerto Destino (numero)
+
+**Response**:
+
+~~~
+{
+	"id": 535,
+	"nombre": "CARTAGENA",
+	"ciudad": {
+		"id": 77852,
+		"nombre": "CARTAGENA",
+		"pais": {
+			"id": 285,
+			"nombre": "COLOMBIA",
+			"codigo": "CO",
+			"requiereCodigoZip": false,
+			"montoMaximoMercanciaGeneral": null,
+			"montoMaximoMercanciaVulnerable": null,
+			"aplicaProtocolo": false,
+			"mercanciasVulnerables": "{\"nombre\":\"Mercancías vulnerables\",\r\n\t\"productos\":[{\r\n\t\t\"nombre\":\"Aceros\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Zinc\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Cobre en laminas o rollos de alambre\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Alimentos enlatados\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Leche en polvo\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Arroz\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Azúcar de cualquier tipo excluida el azúcar crudo\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Calzado\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Cueros\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos de cuero terminados\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Café de exportación\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Café pergamino\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Cigarrillos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Tabaco\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Harina de pescado\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Juegos de video\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Software de videos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Juguetes para niños(as)\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Perfumes\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Colonias y productos similares (incluyendo productos de aseo personal)\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Licores\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Cervezas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Vinos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Libros e impresos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Textos escolares\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Revistas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Llantas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Rines\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Neumáticos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Máquinas para casinos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Juegos de azar\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Teléfonos celulares o equivalentes\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Papel y/o productos elaborados con pulpa de papel:\",\r\n\t\t\"productos\":[{\r\n\t\t\t\t\"nombre\":\"Papel higiénico\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Servilletas\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Toallas para cocina\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Toallas sanitarias\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Pañales desechables\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t}]\r\n\t},{\r\n\t\t\"nombre\":\"Pinturas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Materias primas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Disolventes\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Polipropileno\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Polietileno\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Látex en bruto o a granel\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos biomédicos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos farmacéuticos\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos veterinarios diferentes a la comida para animales\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Productos químicos:\",\r\n\t\t\"productos\":[{\r\n\t\t\t\t\"nombre\":\"Agroquímicos\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Fungicidas \",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Insecticidas\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Abonos\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Fertilizantes\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t}]\r\n\t},{\r\n\t\t\"nombre\":\"Repuestos automotores\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Material CKD, cuando vienen armados (no incluye partes para repuestos desarmados)\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Textiles\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Telas\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Confecciones\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Accesorios\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Vehículos automotores transportados en camiones especiales o niñeras\",\r\n\t\t\"productos\":[]\r\n\t},{\r\n\t\t\"nombre\":\"Vehículos automotores movilizados por sus propios medios:\",\r\n\t\t\"productos\":[{\r\n\t\t\t\t\"nombre\":\"Aviones y/o helicópteros completos o en partes\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Los vehículos en camiones especiales y/o niñeras serán considerados RIESGO MEDIANO hasta USD 250.000 por vehículo\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Valores asegurados mayores serán considerados ALTO RIESGO\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Abonos\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t},{\r\n\t\t\t\t\"nombre\":\"Fertilizantes\",\r\n\t\t\t\t\"productos\":[]\r\n\t\t\t}]\r\n\t}\r\n\r\n\t]\r\n}"
+		},
+		"codigo": "CTG"
+	},
+	"codigo": "CTG"
+}
+~~~
+</details>
+
+
+</details>
