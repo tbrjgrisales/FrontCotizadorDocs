@@ -62,8 +62,10 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 ~~~
 </details>
 
+---
+
 <details>
-<summary><h2>Lista de puertos hasta el id 1307</h2></summary>
+<summary><h2>Se obtiene un objeto json con datos de los clientes: </h2></summary>
 <br>
 
 ### Metodo GET 
@@ -119,7 +121,7 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 
 
 <details>
-<sumary> <h2>Se obtiene un objeto json con datos de los estados</h2></sumary>
+<summary> <h2>Se obtiene un objeto json con datos de los estados</h2></summary>
 <br>
 
 
