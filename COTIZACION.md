@@ -1402,7 +1402,7 @@ graph TD;
     A-->G[https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/grupocomercial/getUsuariosComercialesAsociados/jgrisales@transborderaduat.onmicrosoft.com];
     A-- Cargar Perspectivas -->H[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=4]
 ```
-
+~~~
 stateDiagram-v2
 [*] --> Inicio Modulo 
 Inicio Modulo --> APIPuertos
@@ -1412,7 +1412,7 @@ Inicio Modulo --> APITipoEmbarques
 Inicio Modulo --> APICargarUser
 Inicio Modulo --> APICargarPerspectivas
 Inicio Modulo --> [*]
-
+~~~
 
 ---
 
