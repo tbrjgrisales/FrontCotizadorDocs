@@ -190,124 +190,160 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 
 ---
 
-  - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=3 (GET)`
-  
-  ***Response***:
+<details>
+<summary><h2>Se obtiene un objeto json con los IncoTerms: </h2></summary>
+<br>
 
-  ~~~
+### Metodo GET 
+
+
+- `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id={id}`
+  > ***Note***: El parametro del url es un id (numero).
+
+***Response***:
+
+~~~
+[
+      {
+          "idLista": 3,
+          "identificador": "EXW",
+          "valor": "Exworks",
+          "atributos": null
+      },
+      {
+          "idLista": 3,
+          "identificador": "FCA",
+          "valor": "Free Carrier",
+          "atributos": null
+      },
+      {
+          "idLista": 3,
+          "identificador": "FAS",
+          "valor": "Free Alongside Ship",
+          "atributos": null
+      },
+      {
+          "idLista": 3,
+          "identificador": "FOB",
+          "valor": "Free On Board",
+          "atributos": null
+      },
+      {
+          "idLista": 3,
+          "identificador": "CFR",
+          "valor": "Cost & Freight",
+          "atributos": null
+      },
+      {
+          "idLista": 3,
+          "identificador": "CIF",
+          "valor": "Cost, Insurance & Freight",
+          "atributos": null
+      },
+      {
+          "idLista": 3,
+          "identificador": "CPT",
+          "valor": "Cost Paid To",
+          "atributos": null
+      },
+      {
+          "idLista": 3,
+          "identificador": "CIP",
+          "valor": "Carrier & Insurance Paid to",
+          "atributos": null
+      },
+      {
+          "idLista": 3,
+          "identificador": "DPU",
+          "valor": "Delivered at Place Unloaded",
+          "atributos": null
+      },
+      {
+          "idLista": 3,
+          "identificador": "DAP",
+          "valor": "Delivered At Place",
+          "atributos": null
+      },
+      {
+          "idLista": 3,
+          "identificador": "DDP",
+          "valor": "Delivered Duty Paid",
+          "atributos": null
+      }
+  ]
+~~~
+</details>
+ 
+---
+
+<details>
+<summary><h2>Se obtiene un objeto json con los Tipos de embarque: </h2></summary>
+<br>
+
+### Metodo GET 
+
+- `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id={id}` 
+  > ***Note***: El parametro del url es un id (numero).
+
+
+***Response***:
+
+~~~
   [
-        {
-            "idLista": 3,
-            "identificador": "EXW",
-            "valor": "Exworks",
-            "atributos": null
-        },
-        {
-            "idLista": 3,
-            "identificador": "FCA",
-            "valor": "Free Carrier",
-            "atributos": null
-        },
-        {
-            "idLista": 3,
-            "identificador": "FAS",
-            "valor": "Free Alongside Ship",
-            "atributos": null
-        },
-        {
-            "idLista": 3,
-            "identificador": "FOB",
-            "valor": "Free On Board",
-            "atributos": null
-        },
-        {
-            "idLista": 3,
-            "identificador": "CFR",
-            "valor": "Cost & Freight",
-            "atributos": null
-        },
-        {
-            "idLista": 3,
-            "identificador": "CIF",
-            "valor": "Cost, Insurance & Freight",
-            "atributos": null
-        },
-        {
-            "idLista": 3,
-            "identificador": "CPT",
-            "valor": "Cost Paid To",
-            "atributos": null
-        },
-        {
-            "idLista": 3,
-            "identificador": "CIP",
-            "valor": "Carrier & Insurance Paid to",
-            "atributos": null
-        },
-        {
-            "idLista": 3,
-            "identificador": "DPU",
-            "valor": "Delivered at Place Unloaded",
-            "atributos": null
-        },
-        {
-            "idLista": 3,
-            "identificador": "DAP",
-            "valor": "Delivered At Place",
-            "atributos": null
-        },
-        {
-            "idLista": 3,
-            "identificador": "DDP",
-            "valor": "Delivered Duty Paid",
-            "atributos": null
-        }
-    ]
-  ~~~
+      {
+          "idLista": 1,
+          "identificador": "FCL",
+          "valor": "Full Container Load",
+          "atributos": null
+      },
+      {
+          "idLista": 1,
+          "identificador": "LCL",
+          "valor": "Less Container Load",
+          "atributos": null
+      }
+  ]
+~~~
+</details>
 
-  - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=1 (GET)` 
+---
 
-  ***Response***:
+### Se hace una peticion a esta URL tambien
+### Metodo GET 
 
-  ~~~
-    [
-        {
-            "idLista": 1,
-            "identificador": "FCL",
-            "valor": "Full Container Load",
-            "atributos": null
-        },
-        {
-            "idLista": 1,
-            "identificador": "LCL",
-            "valor": "Less Container Load",
-            "atributos": null
-        }
-    ]
-  ~~~
+- `https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/grupocomercial/getUsuariosComercialesAsociados/jgrisales@transborderaduat.onmicrosoft.com`
 
-  - `https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/grupocomercial/getUsuariosComercialesAsociados/jgrisales@transborderaduat.onmicrosoft.com (GET)`
+---
+
+<details>
+<summary><h2>Se obtiene un objeto json con las Perspectivas: </h2></summary>
+<br>
+
+### Metodo GET 
+
+- `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id={id}`
+    > ***Note***: El parametro del url es un id (numero).
   
-  - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=4 (GET)`
-  
-  ***Response***:
+***Response***:
 
-  ~~~
-    [
-        {
-            "idLista": 4,
-            "identificador": "COMPRADOR",
-            "valor": "Comprador",
-            "atributos": null
-        },
-        {
-            "idLista": 4,
-            "identificador": "VENDEDOR",
-            "valor": "Vendedor",
-            "atributos": null
-        }
-    ]
-  ~~~
+~~~
+[
+    {
+        "idLista": 4,
+        "identificador": "COMPRADOR",
+        "valor": "Comprador",
+        "atributos": null
+    },
+    {
+        "idLista": 4,
+        "identificador": "VENDEDOR",
+        "valor": "Vendedor",
+        "atributos": null
+    }
+]
+~~~
+
+</details>
 
 ---
 
