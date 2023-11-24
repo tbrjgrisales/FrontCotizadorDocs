@@ -1394,15 +1394,15 @@ Al cargar la pantalla de consulta coticiones creadas se cargan las siguientes AP
 
 ```mermaid
 graph TD;
-    A[Inicio Modulo]-- Cargar puertos-->B[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/puerto/];
-    A-- Cargar Clientes -->C[https://transborderuat.eastus.cloudapp.azure.com/msclientes/api/v1/cliente/apiExterna/1];
-    A-- Cargar Estados -->D[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=19];
-    A-- Cargar Incoterms -->E[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=3];
-    A-- Cargar tipo de embarques -->F[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=1];
-    A-->G[https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/grupocomercial/getUsuariosComercialesAsociados/jgrisales@transborderaduat.onmicrosoft.com];
-    A-- Cargar Perspectivas -->H[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=4]
+    A ["Inicio Modulo"] -- "Cargar puertos" --> B ["https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/puerto/"];
+    A -- "Cargar Clientes" --> C ["https://transborderuat.eastus.cloudapp.azure.com/msclientes/api/v1/cliente/apiExterna/1"];
+    A -- "Cargar Estados" --> D ["https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=19"];
+    A -- "Cargar Incoterms" -->E ["https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=3"];
+    A -- "Cargar tipo de embarques" -->F ["https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=1"];
+    A --> G ["https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/grupocomercial/getUsuariosComercialesAsociados/jgrisales@transborderaduat.2onmicrosoft.com"];
+    A -- "Cargar Perspectivas" --> H ["https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=4"]
 ```
-~~~
+```
 stateDiagram-v2
 [*] --> Inicio Modulo 
 Inicio Modulo --> APIPuertos
@@ -1412,7 +1412,7 @@ Inicio Modulo --> APITipoEmbarques
 Inicio Modulo --> APICargarUser
 Inicio Modulo --> APICargarPerspectivas
 Inicio Modulo --> [*]
-~~~
+```
 
 ---
 
