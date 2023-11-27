@@ -17,7 +17,8 @@ B -- Consulta Usuario --> H[https://transborderuat.eastus.cloudapp.azure.com/msu
 B -- Cargar Perspectivas --> I[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=1]
 ```
 ### Ubicación Componente
-(./Images/Consulta-cotizacion.png)
+
+<img src="./Images/Consulta-cotizacion.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
 
 ---
 
