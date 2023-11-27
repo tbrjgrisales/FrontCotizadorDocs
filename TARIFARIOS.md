@@ -4,6 +4,11 @@
 
 ### Ubicación Componentes Tarifas
 
+
+<details>
+<summary>Gestionar Tarifas</summary>
+<br>
+
 <img src="./Images/Tarifas.png" alt="Tarifas Estructura" style="height: 40em; width: 100%;"/>
 
 <details>
@@ -1864,4 +1869,5 @@
 	}
 ]
 ~~~
+</details>
 </details>
