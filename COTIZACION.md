@@ -2,8 +2,11 @@
 
 ## Cotizaciones
 
-### Consultar cotizaciones
+### Ubicación Componente
 
+<img src="./Images/Consulta-cotizacion.png" alt="MarineGEO circle logo" style="height: 40em; width: 100%;"/>
+
+### Consultar cotizaciones
 
 ```mermaid
 graph LR
@@ -16,10 +19,6 @@ B -- Cargar Tipos embarques --> G[https://transborderuat.eastus.cloudapp.azure.c
 B -- Consulta Usuario --> H[https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/grupocomercial/getUsuariosComercialesAsociados/jgrisalestransborderaduat.onmicrosoft.com]
 B -- Cargar Perspectivas --> I[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=1]
 ```
-### Ubicación Componente
-
-<img src="./Images/Consulta-cotizacion.png" alt="MarineGEO circle logo" style="height: 40em; width: 100%;"/>
-
 ---
 
 <details>
