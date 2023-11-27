@@ -147,7 +147,7 @@
 ---
 
 <details>
-<summary><h2>Descargar PDF</h2><summary>
+<summary><h2>Descargar PDF</h2></summary>
 <br>
 
 ### Metodo POST
