@@ -59,7 +59,7 @@
 <strong>No retorna una respuesta</strong>
 
 </details>
-
+</details>
 ---
 
 <details>
@@ -197,8 +197,6 @@
 ]
 ~~~
 
-
-</details>
 
 </details>
 
