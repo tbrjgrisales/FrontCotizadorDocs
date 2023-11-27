@@ -18,7 +18,7 @@ B -- Cargar Perspectivas --> I[https://transborderuat.eastus.cloudapp.azure.com/
 ```
 ### Ubicación Componente
 
-<img src="./Images/Consulta-cotizacion.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
+<img src="./Images/Consulta-cotizacion.png" alt="MarineGEO circle logo" style="height: 40em; width: 100%;"/>
 
 ---
 
