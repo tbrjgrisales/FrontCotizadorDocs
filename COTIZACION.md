@@ -2,7 +2,7 @@
 
 ## Cotizaciones
 
-### Ubicación Componente
+### Ubicación Componente Consulta Cotización
 
 <img src="./Images/Consulta-cotizacion.png" alt="MarineGEO circle logo" style="height: 40em; width: 100%;"/>
 
@@ -1501,6 +1501,11 @@ A[Metodos POST] -- Consultas filtro --> B[https://transborderuat.eastus.cloudapp
 <details>
 <summary><h2>Crear cotización</h2></summary>
 <br>
+
+### Ubicación Componente Consulta Cotización
+
+<img src="./Images/Creacion-cotizacion.png" alt="MarineGEO circle logo" style="height: 40em; width: 100%;"/>
+
 <details>
 <summary><h2>Ciudad Origen</h2></summary>
 <br>
