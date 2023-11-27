@@ -4,7 +4,7 @@
 
 ### Ubicación Componentes Usuarios
 
-<img src="./Images/Usuarios.png" alt="Usuarios Estructura" style="height: 40em; width: 100%;"/>
+<img src="./Images/Administration.png" alt="Usuarios Estructura" style="height: 40em; width: 100%;"/>
 
 ---
 
