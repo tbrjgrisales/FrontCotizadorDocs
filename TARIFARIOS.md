@@ -4,12 +4,11 @@
 
 ### Ubicación Componentes Tarifas
 
+<img src="./Images/Tarifas.png" alt="Tarifas Estructura" style="height: 40em; width: 100%;"/>
 
 <details>
-<summary>Gestionar Tarifas</summary>
+<summary><h2>ksGestionar Tarifas</h2></summary>
 <br>
-
-<img src="./Images/Tarifas.png" alt="Tarifas Estructura" style="height: 40em; width: 100%;"/>
 
 <details>
 <summary><h2>Cargar Tarifas</h2></summary>
