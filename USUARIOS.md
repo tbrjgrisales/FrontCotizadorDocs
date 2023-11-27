@@ -9,10 +9,6 @@
 ---
 
 <details>
-<summary><h2>Creacion Usuario</h2></summary>
-<br>
-
-<details>
 <summary> <h2>Creacion usuario Información</summary>
 <br>
 
@@ -58,7 +54,6 @@
 
 <strong>No retorna una respuesta</strong>
 
-</details>
 </details>
 
 ---
