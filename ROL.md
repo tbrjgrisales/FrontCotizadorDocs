@@ -1,6 +1,6 @@
 # Cotizador Docs
 
-## Usuarios
+## Rol
 
 ### Ubicación Componentes Roles
 
