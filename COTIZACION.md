@@ -17,7 +17,7 @@ B -- Consulta Usuario --> H[https://transborderuat.eastus.cloudapp.azure.com/msu
 B -- Cargar Perspectivas --> I[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=1]
 ```
 ### Ubicación Componente
-[Componente consulta cotizacion](./Images/Consulta-cotizacion.png)
+(./Images/Consulta-cotizacion.png)
 
 ---
 
