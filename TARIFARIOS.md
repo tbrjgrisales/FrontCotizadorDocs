@@ -7,7 +7,7 @@
 <img src="./Images/Tarifas.png" alt="Tarifas Estructura" style="height: 40em; width: 100%;"/>
 
 <details>
-<summary>Cargar Tarifas</summary>
+<summary><h2>Cargar Tarifas</h2></summary>
 <br>
 
 ### Metodo POST
