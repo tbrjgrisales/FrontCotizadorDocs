@@ -130,7 +130,7 @@ B --> K[`https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v
 ---
 
 <details>
-<summary><h2>Despues de esto, al iniciar sesión e ingresar el usuario correctamente, se carga se llaman a los siguientes endpoints: </h2></summary>
+<summary><h2>Microsoft services:</h2></summary>
 <br>
 
 ### Metodo GET 
