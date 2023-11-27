@@ -127,7 +127,17 @@ B --> K[`https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v
 
 </details>
 
-`https://login.microsoftonline.com/common/discovery/instance?api-version=1.1&authorization_endpoint=https%3A%2F%2Flogin.microsoftonline.com%2F1483316d-130f-4b72-a09e-3fb01c930c6d%2Foauth2%2Fv2.0%2Fauthorize (GET)`
+---
+
+<details>
+<summary><h2>Despues de esto, al iniciar sesión e ingresar el usuario correctamente, se carga se llaman a los siguientes endpoints: </h2></summary>
+<br>
+
+### Metodo GET 
+
+
+- `https://login.microsoftonline.com/common/discovery/instance?api-version=1.1&authorization_endpoint=https%3A%2F%2Flogin.microsoftonline.com%2F1483316d-130f-4b72-a09e-3fb01c930c6d%2Foauth2%2Fv2.0%2Fauthorize`
+
 
 **Response**:
 
@@ -180,7 +190,18 @@ B --> K[`https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v
 }
 ~~~
 
-`https://login.microsoftonline.com/1483316d-130f-4b72-a09e-3fb01c930c6d/v2.0/.well-known/openid-configuration (GET) `
+</details>
+
+---
+
+<details>
+<summary><h2>Servicios Microsoft</h2></summary>
+<br>
+
+### Metodo GET 
+
+
+- `https://login.microsoftonline.com/1483316d-130f-4b72-a09e-3fb01c930c6d/v2.0/.well-known/openid-configuration`
 
 **Response**:
 
@@ -255,7 +276,18 @@ B --> K[`https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v
 }
 ~~~
 
-`https://login.microsoftonline.com/1483316d-130f-4b72-a09e-3fb01c930c6d/oauth2/v2.0/token (POST)`
+</details>
+
+---
+
+<details>
+<summary><h2>Token Microsofts</h2></summary>
+<br>
+
+### Metodo POST
+
+
+- `https://login.microsoftonline.com/1483316d-130f-4b72-a09e-3fb01c930c6d/oauth2/v2.0/token`
 
 **Request**:
 
@@ -293,9 +325,31 @@ B --> K[`https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v
 }
 ~~~
 
-`https://transborderuat.eastus.cloudapp.azure.com/assets/i18n/es.json (GET)` Obtiene el idioma el cual se usara en el sistema.
+</details>
 
-`https://graph.microsoft.com/v1.0/me?%24select=id%2CdisplayName%2Cmail%2CmobilePhone%2CuserPrincipalName%2Ccountry%2Ccity%2Cextension_a2b8102f0b8448109d46cae3e2a8f29f_firstLogin%2Cextension_a2b8102f0b8448109d46cae3e2a8f29f_acceptedConditions&%24expand=extensions (GET) `
+---
+
+<details>
+<summary><h2>Token</h2></summary>
+<br>
+
+### Metodo GET
+
+
+- `https://transborderuat.eastus.cloudapp.azure.com/assets/i18n/{idioma}`
+  >***Note***: Parametro url {idioma} (String)
+
+</details>
+
+---
+
+<details>
+<summary><h2>Token Microsoft</h2></summary>
+<br>
+
+### Metodo GET
+
+ - `https://graph.microsoft.com/v1.0/me?%24select=id%2CdisplayName%2Cmail%2CmobilePhone%2CuserPrincipalName%2Ccountry%2Ccity%2Cextension_a2b8102f0b8448109d46cae3e2a8f29f_firstLogin%2Cextension_a2b8102f0b8448109d46cae3e2a8f29f_acceptedConditions&%24expand=extensions`
 
 **Response**:
 
@@ -332,7 +386,18 @@ B --> K[`https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v
 }
 ~~~
 
-`https://login.microsoftonline.com/1483316d-130f-4b72-a09e-3fb01c930c6d/oauth2/v2.0/token (POST)`
+</details>
+
+---
+
+<details>
+<summary><h2>Token Cotizador</h2></summary>
+<br>
+
+### Metodo POST
+
+ - `https://login.microsoftonline.com/1483316d-130f-4b72-a09e-3fb01c930c6d/oauth2/v2.0/token`
+
 
 **Request**:
 
@@ -368,7 +433,17 @@ B --> K[`https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v
 }
 ~~~
 
-`https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/permiso/byRoles (POST)`
+</details>
+
+---
+
+<details>
+<summary><h2>Permisos por roles</h2></summary>
+<br>
+
+### Metodo POST
+
+- `https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/permiso/byRoles`
 
 **Request**:
 
@@ -414,7 +489,17 @@ B --> K[`https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v
 ]
 ~~~
 
-`https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/parameter/TIEMPO_MAXIMO_PARA_EXPIRAR_SESION_DEL_USUARIO (GET)`
+</details>
+
+---
+
+<details>
+<summary><h2>Tiempo expiracion session</h2></summary>
+<br>
+
+### Metodo GET
+
+ - `https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/parameter/TIEMPO_MAXIMO_PARA_EXPIRAR_SESION_DEL_USUARIO`
 
 **Response**:
 
@@ -429,4 +514,6 @@ B --> K[`https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v
 	"fechaModificacion": "2023-09-27T20:19:22.833+00:00"
 }
 ~~~
+
+</details>
 
