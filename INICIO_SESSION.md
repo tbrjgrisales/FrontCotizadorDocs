@@ -4,7 +4,7 @@
 
 ### Ubicación Componente Inicio Sesión
 
-<img src="./Images/Consulta-cotizacion.png" alt="MarineGEO circle logo" style="height: 40em; width: 100%;"/>
+<img src="./Images/Inicio-Sesion.png" alt="MarineGEO circle logo" style="height: 40em; width: 100%;"/>
 
 ```mermaid
 graph LR
