@@ -4964,3 +4964,26 @@
 </details>
 
 </details>
+
+---
+
+<details>
+<summary><h2>Cambiar Contraseña<h2></summary>
+<br>
+
+### Metodo POST
+
+- `https://graph.microsoft.com/v1.0/me/changePassword`
+
+**Response**:
+
+~~~
+{
+	"currentPassword": "oldP455",
+	"newPassword": "newP455_##"
+}
+~~~
+  
+
+</details>
+
