@@ -13,7 +13,7 @@
 graph LR
 A[Rol Componente] -- Crear Rol --> B[https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/rol/?nombre=name]
 A -- Permisos --> C[https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/permiso]
-A -- Consultar Usuario --> D[https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/rol/?nombre=pruebaDocs&activo=true]
+A -- Consultar Rol --> D[https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/rol/?nombre=pruebaDocs&activo=true]
 ```
 
 ---

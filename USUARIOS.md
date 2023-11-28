@@ -8,6 +8,14 @@
 
 ---
 
+```mermaid
+graph LR
+A[Usuario Componente] -- Crear Usuario --> B[https://transborderuat.eastus.cloudapp.azure.com/cpusuarios/api/v1/usuariosCP]
+A -- Consultar Usuario --> D[https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/usuario/find]
+```
+
+---
+
 <details>
 <summary> <h2>Creacion usuario Información</summary>
 <br>
