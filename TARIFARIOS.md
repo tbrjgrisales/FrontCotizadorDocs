@@ -6,6 +6,23 @@
 
 <img src="./Images/Tarifas.png" alt="Tarifas Estructura" style="height: 40em; width: 100%;"/>
 
+---
+
+```mermaid
+graph LR
+A[Tarifas Componente] --> B[Gestion Tarifas]
+B -- Cargar Tarifas --> C[https://transborderuat.eastus.cloudapp.azure.com/cptarifas/api/v1/tarifasCP/createTarifaSeguro]
+B -- Reachazo Carga Perecedera --> D[https://transborderuat.eastus.cloudapp.azure.com/cpcotizaciones/api/v1/cotizacionCP/rechazarRequerimientoSpotCargaPerecedera]
+B -- Consultar Tarifarios --> E[https://transborderuat.eastus.cloudapp.azure.com/mstarifas/api/v1/tarifa/consultarTarifariosPorProducto]
+B -- Descargar PDF --> F[https://transborderuat.eastus.cloudapp.azure.com/msarchivos/api/v1/azureBlob/downloadTarifariosPorProductos]
+B -- Parametrizar tarifas especificas --> G[https://transborderuat.eastus.cloudapp.azure.com/mstarifas/api/v1/tarifa/getAllTarifasEspecificas]
+B -- Tarifas Especificas Activar / Desactivar --> H[https://transborderuat.eastus.cloudapp.azure.com/mstarifas/api/v1/tarifa/actualizarTarifaEspecifica]
+B -- Parametrizar otros conceptos --> I[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/parametrizacionConceptosPais/guardarParametrizacion]
+B -- Generar reporte SPOT --> J[https://transborderuat.eastus.cloudapp.azure.com/mscotizaciones/api/v1/cotizacion/consultarGestionSPOT]
+```
+
+---
+
 <details>
 <summary><h2>Gestionar Tarifas</h2></summary>
 <br>
@@ -1876,6 +1893,19 @@
 <details>
 <summary><h2>Intervenir Tarifas</h2></summary>
 <br>
+
+---
+
+```mermaid
+graph LR
+A[Tarifas Componente] --> B[Intervenir Tarifas]
+B -- Consulta tarifas intervención pricing --> C[https://transborderuat.eastus.cloudapp.azure.com/mstarifas/api/v1/tarifa]
+B -- Consulta tarifas intervención pricing id --> D[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=id]
+B -- Consulta intervenciones Pricing --> E[https://transborderuat.eastus.cloudapp.azure.com/mstarifas/api/v1/tarifa/consultaGestionVigenciaPricing]
+B -- Intervenir tarifas por Tier --> F[https://transborderuat.eastus.cloudapp.azure.com/mstarifas/api/v1/tarifa/consultaTier]
+B -- Intervenir tarifas por Tier Listas --> G[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/listas?id=id]
+B -- Intervenir tarifas por Tier Moneda --> H[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/moneda]
+```
 
 ---
 
