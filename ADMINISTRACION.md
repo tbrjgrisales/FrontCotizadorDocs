@@ -8,6 +8,31 @@
 
 ---
 
+```mermaid
+graph LR
+A[Administracion Componente] --> B[Parametrizar etapas logísticas por Incoterm]
+B -- Parametrizar etapas logísticas por Incoterm informacion Formulario --> C[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/parametrizacionIncoterm/byIdPais?idPais=idPais]
+B -- Guardar etapas logísticas por Incoterm --> D[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/parametrizacionIncoterm/create]
+A --> E[Configurar parámetros]
+E -- Parámetros para gestionar tarifas marítimo Actualizar parametros basicos --> F[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/parameter/actualizaParametrosBasicos]
+E -- Parámetros para gestionar tarifas marítimo tarifas cotizacion Usuario --> G[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/parameter/getAllParameterTarifasCotizacionUsuario]
+E -- Parámetros para gestionar cotizaciones marítimo Actualizacion parametros basicos --> H[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/parameter/actualizaParametrosBasicos]
+E -- Parámetros para gestionar cotizaciones marítimo Tarifas cotizacion --> I[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/parameter/getAllParameterTarifasCotizacionUsuario]
+E -- Parámetros para gestionar usuarios Actualizacion parametros basicos --> J[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/parameter/actualizaParametrosBasicos]
+E -- Parámetros para gestionar usuarios tarifas cotizacion --> K[https://transborderuat.eastus.cloudapp.azure.com/msadministracion/api/v1/parameter/getAllParameterTarifasCotizacionUsuario]
+A --> L[Parametrizar usuarios Producto]
+L -- Consulta por Responsable del área de producto --> M[https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/responsableProducto/?idUsuarioAD=idUsuarioAD]
+A --> N[Parametrizar grupos comerciales]
+N -- Usuarios activos --> O[https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/grupocomercial/getdUsuariosComercialesActivos/emailUsuario]
+A --> P[Reasignar Cotizaciones]
+P --  Administrar el sistema --> Q[https://transborderuat.eastus.cloudapp.azure.com/mscotizaciones/api/v1/cotizacion/consultaUsuarioAsignado/emailUsuario]
+A --> Q[Parametrizar Usuarios Pricing]
+Q -- Consulta por gerente de venta pricing --> R[https://transborderuat.eastus.cloudapp.azure.com/msusuarios/api/v1/gerenteVenta/?usuario=emailUsuario]
+A -- Cambiar Contraseña --> S[https://graph.microsoft.com/v1.0/me/changePassword]
+```
+
+---
+
 <details>
 <summary><h2>Parametrizar etapas logísticas por Incoterm </h2></summary>
 <br>
